@@ -1,0 +1,41 @@
+.portfolio-section {
+  background-color: var(--light-red);
+}
+
+.portfolio-grid {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem 1rem;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.portfolio-card {
+  position: relative;
+  margin: 0.5rem;
+  width: 350px;
+}
+
+.card-header {
+  text-align: center;
+}
+
+#card-image {
+  object-position: top;
+}
+
+.card-content-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MuiCardHeader-subheader,
+#expand-btn {
+  color: white !important;
+}
