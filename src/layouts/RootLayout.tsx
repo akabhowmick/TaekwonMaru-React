@@ -1,28 +1,65 @@
 import { NavLink, Outlet } from "react-router-dom";
+import { taekwonMaruLogo } from "../utils/home-info";
+import { NavUnlisted } from "./NavbarStyles";
+import "./Navbar.css";
+
+const links = [
+  { name: "About Us", path: "/about-us" },
+  { name: "Programs", path: "/programs" },
+  { name: "Schedule", path: "/schedule" },
+];
 
 export const RootLayout = () => {
   return (
     <div className="root-layout">
       <header className="nav-bar">
         <nav>
-          <h1 id="site-header">TaekwonMaru</h1>
-          <div className="nav-links">
-            <NavLink className="single-nav-link" to="/">
-              Home
+          <NavUnlisted>
+            <div className="main-regular-links">
+              {links.map((link, index) => (
+                <NavLink
+                  key={index}
+                  to={link.path}
+                  className={({ isActive, isPending, isTransitioning }) =>
+                    [
+                      isPending ? "pending" : "",
+                      isActive ? "active" : "",
+                      isTransitioning ? "transitioning" : "",
+                    ].join(" ")
+                  }
+                >
+                  <li>{link.name}</li>
+                </NavLink>
+              ))}
+              <NavLink
+                to="/contact"
+                className={({ isActive, isPending, isTransitioning }) =>
+                  [
+                    isPending ? "pending" : "",
+                    isActive ? "active" : "",
+                    isTransitioning ? "transitioning" : "",
+                  ].join(" ")
+                }
+              >
+                <li>Book a Class!</li>
+              </NavLink>
+            </div>
+
+            <NavLink
+              to="/"
+              id="logo-with-title"
+              className={({ isActive, isPending, isTransitioning }) =>
+                [
+                  isPending ? "pending" : "",
+                  isActive ? "active" : "",
+                  isTransitioning ? "transitioning" : "",
+                ].join(" ")
+              }
+            >
+              <img className="navbar-logo" src={taekwonMaruLogo} alt="tkd-main-logo" />
+              <h2>TaekwonMaru</h2>
             </NavLink>
-            <NavLink className="single-nav-link" to="/about-us">
-              About Us
-            </NavLink>
-            <NavLink className="single-nav-link" to="/programs">
-              Programs
-            </NavLink>
-            <NavLink className="single-nav-link" to="/schedule">
-              Schedule
-            </NavLink>
-            <NavLink className="single-nav-link" to="/contact">
-              Contact Us
-            </NavLink>
-          </div>
+          </NavUnlisted>
         </nav>
       </header>
       <main>
@@ -30,60 +67,4 @@ export const RootLayout = () => {
       </main>
     </div>
   );
-}
-
-import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
-import {
-  NavbarContainer,
-  NavbarLinkContainer,
-  NavbarLink,
-  ButtonLink,
-  ExtendedNavbar,
-  NavbarLinkExtended,
-} from "./NavStyle";
-const Navbar: React.FC = () => {
-  // ..
-  const location = useLocation();
-  useEffect(() => {
-    setExtendNavbar(false);
-  }, [location]);
-  // ..
-  const [extendNavbar, setExtendNavbar] = useState(false);
-  return (
-    <NavbarContainer extend={extendNavbar}>
-      <NavbarLinkContainer>
-        <NavbarLink className="nav-link active" to="/home">
-          Home
-        </NavbarLink>
-        <NavbarLink className="nav-link" to="/about">
-          About Us
-        </NavbarLink>
-        <NavbarLink className="nav-link" to="/contact">
-          Contact Us
-        </NavbarLink>
-        <ButtonLink
-          onClick={() => {
-            setExtendNavbar((curr) => !curr);
-          }}
-        >
-          {extendNavbar ? <>&#10005;</> : <>&#8801;</>}
-        </ButtonLink>
-      </NavbarLinkContainer>
-      {extendNavbar && (
-        <ExtendedNavbar>
-          <NavbarLinkExtended className="nav-link active" to="/home">
-            Home
-          </NavbarLinkExtended>
-          <NavbarLinkExtended className="nav-link" to="/about">
-            About Us
-          </NavbarLinkExtended>
-          <NavbarLinkExtended className="nav-link" to="/contact">
-            Contact Us
-          </NavbarLinkExtended>
-        </ExtendedNavbar>
-      )}
-    </NavbarContainer>
-  );
 };
-export default Navbar;

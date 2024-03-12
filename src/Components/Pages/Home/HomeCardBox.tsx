@@ -1,8 +1,8 @@
 import { HomeCardInfo } from "../../../types/interfaces";
 import "./Home.css";
 
-export const HomeCardBox = ({ cardInfo, key }: { cardInfo: HomeCardInfo, key:string }) => {
-  const { src, description, type } = cardInfo;
+export const HomeCardBox = ({ cardInfo }: { cardInfo: HomeCardInfo}) => {
+  const { title, src, description, type } = cardInfo;
 
   const mediaToDisplay =
     type === "image" ? (
@@ -14,7 +14,7 @@ export const HomeCardBox = ({ cardInfo, key }: { cardInfo: HomeCardInfo, key:str
         src={src}
         title="YouTube video player"
         frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
         allowFullScreen
       ></iframe>
     );
@@ -22,7 +22,7 @@ export const HomeCardBox = ({ cardInfo, key }: { cardInfo: HomeCardInfo, key:str
   return (
     <div className="card light-bg half-section img-1">
       {mediaToDisplay}
-      <h3 className="subheader">{key}</h3>
+      <h3 className="subheader">{title}</h3>
       <div className="description">{description}</div>
       <a href="./html/contact-us.html" className="btn-primary">
         Book a Class

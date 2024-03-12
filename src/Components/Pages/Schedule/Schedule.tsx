@@ -1,3 +1,4 @@
+import { scheduleImage } from "../../../utils/home-info";
 import "./Schedule.css";
 
 export const Schedule = () => {
@@ -6,7 +7,7 @@ export const Schedule = () => {
       <h3 className="section-header title-capitalize">SCHEDULE:</h3>
 
       <div className="schedule-section">
-        <img src="../assets/school.png" alt="schedule" />
+        <img src={scheduleImage} alt="schedule" />
       </div>
 
       <div className="events">

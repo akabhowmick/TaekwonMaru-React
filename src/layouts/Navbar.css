@@ -1,0 +1,28 @@
+.navbar-logo{
+  width: 75px;
+}
+
+.main-regular-links{
+  display: flex;
+}
+
+#logo-with-title{
+  display: flex;
+  align-items: center;
+}
+
+#logo-with-title h2{
+  color: var(--bright-red);
+}
+
+@media only screen and (max-width: 37.5em) {
+  .main-regular-links{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .main-regular-links{
+    display: none;
+  }
+}

@@ -9,13 +9,17 @@
 
   --background: #dcdcdc;
   --dark-red: #660708;
-  --bright-red: #e5383b;
-  --light-red: #ffd6d5;
+  --bright-red: #ff2428;
+  --light-red: #f6d9d9;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#root{
+  background-color: var(--light-red);
 }
 
 a {
@@ -97,6 +101,7 @@ button:not(:disabled):not(.disabled) {
 .btn-primary a {
   color: #fff;
   padding: 0.5rem 1.5rem;
+  background-color: var(--dark-red);
 }
 
 .round-pill {
@@ -109,7 +114,21 @@ button:not(:disabled):not(.disabled) {
   background-color: var(--dark-red);
   color: #fff;
   text-transform: capitalize;
-  padding: 12rem 5rem 5rem;
+  padding: 5rem;
   font-size: 3.5rem;
-  margin-bottom: 0;
+  margin-bottom: -1px;
 }
+
+
+@media only screen and (max-width: 56.25em) {
+  .section-header {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .section-header {
+    font-size: 2rem;
+  }
+}
+

@@ -2,8 +2,12 @@ import { HomeCardInfo } from "../types/interfaces";
 import trialImage from "../assets/children-home.png";
 import promoImage from "../assets/Promo/marutkd-promo-49.jpg";
 import homePageImage from "../assets/home-page.png";
+import schoolIcon from "../assets/tkd-logo.png";
+import schedule from "../assets/schedule.png";
 
-export const homeImage = homePageImage; 
+export const homeImage = homePageImage;
+export const taekwonMaruLogo = schoolIcon;
+export const scheduleImage = schedule; 
 
 const trialClassInfo: HomeCardInfo = {
   title: "$10 - TRIAL LESSON",
@@ -75,16 +79,14 @@ export const HomeCardAdVideoBoxes: HomeCardInfo[] = [summerCamp, birthdayParty];
 const teenClassVideo: HomeCardInfo = {
   title: "Teen and Adults!",
   src: "https://www.youtube.com/embed/uhGYAW_hvm4",
-  description:
-    "",
+  description: "",
   type: "video",
 };
 
 const childrenClassVideo: HomeCardInfo = {
   title: "Children Classes!",
   src: "https://www.youtube.com/embed/SSplA3C-nUE",
-  description:
-    "",
+  description: "",
   type: "video",
 };
 

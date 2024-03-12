@@ -114,4 +114,8 @@ iframe {
     object-fit: cover;
     object-position: center;
   }
+  .card {
+    min-width: 300px;
+    padding: 1rem;
+  }
 }

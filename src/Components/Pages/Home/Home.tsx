@@ -30,11 +30,13 @@ export const Home = () => {
             <div className="header-large">
               <h3>{sectionTitle}</h3>
             </div>
-            <div className="main-page-sections">
-              {media.map((cardInfo) => {
-                return <HomeCardBox cardInfo={cardInfo} key={cardInfo.title} />;
-              })}
-            </div>
+            {media.map((cardInfo) => {
+              return (
+                <div className="main-page-sections" key={cardInfo.title}>
+                  <HomeCardBox cardInfo={cardInfo} />
+                </div>
+              );
+            })}
           </section>
         );
       })}

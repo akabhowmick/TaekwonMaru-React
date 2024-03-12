@@ -77,8 +77,12 @@ export const DisplayCard = ({
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography paragraph>Class Description:</Typography>
-          {details.map((sentence) => {
-            return <Typography paragraph>{sentence}</Typography>;
+          {details.map((sentence, index) => {
+            return (
+              <div key={index}>
+                <Typography paragraph>{sentence}</Typography>;
+              </div>
+            );
           })}
         </CardContent>
       </Collapse>
