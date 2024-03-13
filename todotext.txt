@@ -1,7 +1,17 @@
-Navbar => styling and responsive 
+Home => 
+  sections not coming in pairs
+  responsive needs
+  loading needs 
+
+Contact => 
+  make email js account 
+  yell at the right times 
+  add the phone number 
+  add the classes 
+
+
+Done but need to checked over: 
 Footer => done
-Home => done but let's add better styles and animations
-Masters => need the subheaders; play with object position for each person (can use left and then -60px for os)
 Programs => done
-Contact => styling 
-Schedule => styling and image
+Schedule => done
+Navbar => done

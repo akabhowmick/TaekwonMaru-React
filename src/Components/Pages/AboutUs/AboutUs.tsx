@@ -1,9 +1,10 @@
 import { masterList } from "../../../utils/masters-info";
 import { DisplayCard } from "../../SharedSections/DisplayCard/DisplayCard";
+import "./AboutUs.css";
 
 export const AboutUs = () => {
   return (
-    <section>
+    <section className="about-us-container">
       <h3 className="section-header title-capitalize">About Us:</h3>
       <div className="portfolio-section">
         <div className="portfolio-grid">

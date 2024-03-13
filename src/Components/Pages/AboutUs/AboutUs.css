@@ -1,0 +1,11 @@
+.about-us-container .portfolio-card:nth-child(4) #card-image{
+  object-position: left -60px;
+}
+
+.about-us-container .portfolio-card:nth-child(5) #card-image{
+  object-position: left -60px;
+}
+
+.about-us-container .portfolio-card:nth-child(6) #card-image{
+  object-position: left -80px;
+}

@@ -39,3 +39,15 @@
 #expand-btn {
   color: white !important;
 }
+
+@media screen and (max-width: 37.5em) {
+  .portfolio-card {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 56.25em) {
+  .portfolio-card {
+    width: 300px;
+  }
+}

@@ -129,6 +129,8 @@ button:not(:disabled):not(.disabled) {
 @media only screen and (max-width: 37.5em) {
   .section-header {
     font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
   }
 }
 

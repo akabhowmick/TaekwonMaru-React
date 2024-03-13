@@ -36,7 +36,8 @@
 .events-grid {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .table-entry {
@@ -47,3 +48,23 @@
   color: var(--light-red);
   user-select: none;
 }
+
+@media only screen and (max-width: 37.5em) {
+  .lies{
+    display: none;
+  }
+
+  .events h2{
+    font-size: 2.5rem;
+  }
+
+  .schedule-section {
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+/* @media only screen and (max-width: 56.25em) {
+  .main-regular-links{
+    display: none;
+  }
+} */

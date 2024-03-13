@@ -4,17 +4,11 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 
 export const Footer = () => {
   return (
-    <footer
-      className="text-lg-start"
-    >
+    <footer className="text-lg-start">
       <div className="p-4 pb-0">
         <div className="main-footer-div">
           <div>
-            <h6
-              className="text-white text-uppercase mb-4 font-weight-bold"
-            >
-              OPENING HOURS:
-            </h6>
+            <h6 className="text-white text-uppercase mb-4 font-weight-bold">OPENING HOURS:</h6>
 
             <table>
               <tbody className="font-weight-normal">
@@ -49,7 +43,7 @@ export const Footer = () => {
             <p className="text-white">
               <i className="text-white fas fa-envelope mr-3"></i>
               <a className="footer-text" href="mailto:usataekwonmaru@gmail.com">
-                Email Us!
+                usataekwonmaru@gmail.com
               </a>
             </p>
             <p className="text-white">
@@ -71,17 +65,13 @@ export const Footer = () => {
               >
                 <FacebookIcon fontSize="large" />
               </a>
-              <a
-                className="social"
-                href="https://www.instagram.com/marutkd1/"
-                role="button"
-              >
+              <a className="social" href="https://www.instagram.com/marutkd1/" role="button">
                 <InstagramIcon fontSize="large" />
               </a>
             </div>
           </div>
         </div>
-        <hr className="bottom-line"/>
+        <hr className="bottom-line" />
         <div className="footer-credits">
           Made by <a href="https://akashbhowmick.com/">AKA CODE</a>
         </div>
