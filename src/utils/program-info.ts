@@ -40,7 +40,7 @@ const preTeenClass: ClassInfo = {
 };
 
 const advTeenClass: ClassInfo = {
-  title: "Advanced Teenager (14-17)",
+  title: "Adv. Teenager (14-17)",
   subtitle: "Click to learn more about the Advanced Teenager Class!",
   details: [
     "This program is aimed at high school students. Similar opportunities as membership as a Junior Leader or Demo Team are available, with even increased emphasis on the students' stamina, strength, and mentality.",

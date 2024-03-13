@@ -19,7 +19,7 @@
   font-weight: 600;
 }
 
-.main-navbar-ul a:hover {
+.main-regular-links a:nth-child(-n+4):hover {
   background-color: var(--dark-red);
   border-radius: 5px;
 }
@@ -30,7 +30,7 @@
   margin: 0 8px;
 }
 
-.main-navbar-ul a li:hover,
+.main-navbar-ul a li:nth-child(n+1):hover,
 .main-navbar-ul a:nth-child(4) li {
   color: white;
 }

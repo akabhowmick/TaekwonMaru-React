@@ -20,13 +20,13 @@ export const HomeCardBox = ({ cardInfo }: { cardInfo: HomeCardInfo}) => {
     );
 
   return (
-    <div className="card light-bg half-section img-1">
+    <>
       {mediaToDisplay}
       <h3 className="subheader">{title}</h3>
       <div className="description">{description}</div>
       <a href="./html/contact-us.html" className="btn-primary">
         Book a Class
       </a>
-    </div>
+    </>
   );
 };

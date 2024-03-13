@@ -33,7 +33,7 @@
 }
 
 .card {
-  padding: 4rem;
+  padding: 0.5rem;
   border-radius: 0;
   border: none;
   min-width: 400px;
@@ -68,6 +68,7 @@ iframe {
   text-align: center;
   border-radius: 50rem;
   font-size: 1.35rem;
+  font-weight: 600;
 }
 
 .dark-bg .btn-primary {
@@ -107,6 +108,13 @@ iframe {
   width: 100%;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .main-page-sections {
+    display: block;
+    margin: 0;
+  }
+}
+
 @media screen and (max-width: 37.5em) {
   .home-picture {
     width: 100%;
@@ -117,5 +125,14 @@ iframe {
   .card {
     min-width: 300px;
     padding: 1rem;
+  }
+  iframe {
+    min-height: 300px;
+  }
+  .header-large h3 {
+    font-size: 2.5rem;
+  }
+  .description {
+    font-size: 1.15rem;
   }
 }

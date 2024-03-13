@@ -80,7 +80,7 @@ export const DisplayCard = ({
           {details.map((sentence, index) => {
             return (
               <div key={index}>
-                <Typography paragraph>{sentence}</Typography>;
+                <Typography paragraph>{sentence}</Typography>
               </div>
             );
           })}

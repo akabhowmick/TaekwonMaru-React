@@ -85,7 +85,7 @@
   font-weight: 600;
 }
 
-.contact-form-input:focus, 
+.contact-form-input:focus,
 .contact-form-input:focus-visible {
   outline: none;
 }
@@ -115,11 +115,16 @@
   border-radius: 5px;
 }
 
-.contactform .show, .expandable.show {
+.contactform .show,
+.expandable.show {
   font-size: 0.9rem;
   background-color: var(--dark-red);
   color: white;
   padding: 5px;
+}
+
+#contact-submit-btn {
+  margin-top: 1rem;
 }
 
 @media only screen and (max-width: 56.25em) {

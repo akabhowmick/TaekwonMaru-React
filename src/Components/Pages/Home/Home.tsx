@@ -33,7 +33,7 @@ export const Home = () => {
             <div className="main-page-sections">
               {media.map((cardInfo) => {
                 return (
-                  <div key={cardInfo.title}>
+                  <div className="card light-bg half-section img-1" key={cardInfo.title}>
                     <HomeCardBox cardInfo={cardInfo} />
                   </div>
                 );

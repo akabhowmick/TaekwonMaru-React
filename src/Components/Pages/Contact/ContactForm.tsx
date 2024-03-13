@@ -101,7 +101,12 @@ export const ContactForm = () => {
           </div>
         </div>
         <div className="col-12">
-          <button disabled={formik.isSubmitting} type="submit" className="btn main-btn">
+          <button
+            id="contact-submit-btn"
+            disabled={formik.isSubmitting}
+            type="submit"
+            className="btn btn-primary"
+          >
             <span>{buttonState}</span>
           </button>
         </div>
