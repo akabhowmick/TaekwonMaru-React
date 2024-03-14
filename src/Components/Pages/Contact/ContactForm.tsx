@@ -46,10 +46,9 @@ export const ContactForm = () => {
   });
 
   const contactFormInput = [
-    { name: "Name:", label: "from_name" },
+    { name: "Name", label: "from_name" },
     { name: "Email", label: "reply_to" },
     { name: "Phone Number", label: "phone_number" },
-    { name: "Class Of Interest", label: "class_of_interest" },
     { name: "Message", label: "message" },
   ];
 
@@ -85,29 +84,61 @@ export const ContactForm = () => {
     return "";
   };
 
+  const contactFormInputs = contactFormInput.map(({ name, label }) => {
+    return (
+      <div key={name} className="contact-form-div">
+        <label htmlFor={label}>{name}</label>
+        <input
+          className="contact-form-input"
+          id={label}
+          name={label}
+          type="text"
+          autoComplete="off"
+          placeholder={`Your ${name}`}
+          onChange={formik.handleChange}
+          value={getFormikValues(label)}
+        />
+        {formik.submitCount > 0 && getFormikErrors(label) && (
+          <div className="expandable show">{getFormikErrors(label)}</div>
+        )}
+      </div>
+    );
+  });
+
+  const classOptions = [
+    "Little Tiger (2-5)",
+    "Children (6-9)",
+    "Pre-Teen (10-13)",
+    "Advanced Teen (14-17)",
+    "Adults (18+)",
+    "Kpop Dance Class (6+)",
+  ];
+
+  const selectClasses = (
+    <div className="contact-form-div">
+      <label htmlFor="class_of_interest">Class Of Interest</label>
+      <select
+        className="contact-form-input"
+        id="class_of_interest"
+        name="class_of_interest"
+        onChange={formik.handleChange}
+        value={getFormikValues("class_of_interest")}
+      >
+        {classOptions.map((className) => {
+          return <option key={className} value={className} label={className}></option>;
+        })}
+      </select>
+      {formik.submitCount > 0 && getFormikErrors("class_of_interest") && (
+        <div className="expandable show">{getFormikErrors("class_of_interest")}</div>
+      )}
+    </div>
+  );
+
   return (
     <form className="formcontact" onSubmit={formik.handleSubmit}>
       <div className="form-row-1">
-        {contactFormInput.map(({ name, label }) => {
-          return (
-            <div key={name} className="contact-form-div">
-              <label htmlFor={label}>{name}</label>
-              <input
-                className="contact-form-input"
-                id={label}
-                name={label}
-                type="text"
-                autoComplete="off"
-                placeholder={`Your ${name}`}
-                onChange={formik.handleChange}
-                value={getFormikValues(label)}
-              />
-              {formik.submitCount > 0 && getFormikErrors(label) && (
-                <div className="expandable show">{getFormikErrors(label)}</div>
-              )}
-            </div>
-          );
-        })}
+        {contactFormInputs}
+        {selectClasses}
         <div className="col-12">
           <button
             id="contact-submit-btn"
@@ -117,9 +148,6 @@ export const ContactForm = () => {
           >
             <span>{buttonState}</span>
           </button>
-        </div>
-        <div className="col-12 form-message">
-          <span id="output" className="output_message text-center text-uppercase" />
         </div>
       </div>
     </form>

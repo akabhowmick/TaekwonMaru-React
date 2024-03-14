@@ -1,12 +1,9 @@
 Home => 
   basic scroll animations
 
-Contact =>
-  add the classes 
-
-
 Done but need to checked over: 
 Footer => done
 Programs => done
 Schedule => done
 Navbar => done
+Contact => done

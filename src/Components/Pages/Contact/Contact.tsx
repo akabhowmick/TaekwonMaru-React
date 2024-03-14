@@ -23,7 +23,7 @@ const contactLinksAndIcons = [
   },
   {
     icon: <OpenInBrowserIcon />,
-    title: "Website",
+    title: "Website: ",
     info: "Maru Taekwondo",
     link: "/",
   },
