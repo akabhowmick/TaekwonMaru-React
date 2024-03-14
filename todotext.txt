@@ -1,10 +1,7 @@
 Home => 
   basic scroll animations
 
-Contact => 
-  make email js account 
-  yell at the right times 
-  add the phone number 
+Contact =>
   add the classes 
 
 
