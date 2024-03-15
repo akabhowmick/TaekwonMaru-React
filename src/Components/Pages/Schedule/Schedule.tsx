@@ -1,8 +1,6 @@
 import { scheduleImage } from "../../../utils/home-info";
 import "./Schedule.css";
 
-// Todo Can refactor
-
 const eventsInfo = [
   {
     title: "KPOP - Dance:",
@@ -31,7 +29,7 @@ const eventsInfo = [
 const eventContainer = eventsInfo.map((event) => {
   return (
     <div key={event.title} className="table-entry col-lg-4 col-md-6 mb-4 mb-md-0">
-      <h6 className="text-uppercase mb-4 font-weight-bold mt-1">{event.title}</h6>
+      <h3 className="text-uppercase mb-4 font-weight-bold mt-1">{event.title}</h3>
       <hr />
       {event.details.map((detail, index) => {
         return (

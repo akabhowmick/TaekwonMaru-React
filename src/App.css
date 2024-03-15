@@ -18,7 +18,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-#root{
+#root {
   background-color: var(--light-red);
 }
 
@@ -56,6 +56,16 @@ p {
 }
 button {
   outline: none;
+}
+
+.loading-container {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--light-red);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
 }
 
 .container,
@@ -119,7 +129,6 @@ button:not(:disabled):not(.disabled) {
   margin-bottom: -1px;
 }
 
-
 @media only screen and (max-width: 56.25em) {
   .section-header {
     font-size: 2.5rem;
@@ -131,6 +140,6 @@ button:not(:disabled):not(.disabled) {
     font-size: 2rem;
     padding: 2rem;
     text-align: center;
+    margin-top: 5rem;
   }
 }
-

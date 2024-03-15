@@ -19,7 +19,7 @@
   font-weight: 600;
 }
 
-.main-regular-links a:nth-child(-n+4):hover {
+.main-regular-links a:nth-child(-n + 4):hover {
   background-color: var(--dark-red);
   border-radius: 5px;
 }
@@ -30,7 +30,7 @@
   margin: 0 8px;
 }
 
-.main-navbar-ul a li:nth-child(n+1):hover,
+.main-navbar-ul a li:nth-child(n + 1):hover,
 .main-navbar-ul a:nth-child(4) li {
   color: white;
 }
@@ -71,6 +71,14 @@
     display: block;
   }
 
+  .main-navbar-ul {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
   .main-navbar-ul a:nth-child(4) {
     background-color: var(--light-red);
     margin: 0;
@@ -99,7 +107,8 @@
     font-size: 1.5rem;
   }
 
-  .main-navbar-ul a li, .main-navbar-ul a:nth-child(4) li {
+  .main-navbar-ul a li,
+  .main-navbar-ul a:nth-child(4) li {
     color: var(--dark-red);
   }
 }

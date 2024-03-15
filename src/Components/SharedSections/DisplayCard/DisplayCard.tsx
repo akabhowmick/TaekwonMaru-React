@@ -2,7 +2,6 @@ import * as React from "react";
 import { styled } from "@mui/material/styles";
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
-import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import Collapse from "@mui/material/Collapse";
 import IconButton, { IconButtonProps } from "@mui/material/IconButton";
@@ -10,6 +9,7 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { ClassInfo, MasterInfo } from "../../../types/interfaces";
 import "./DisplayCard.css";
+import { LazyLoadingImage } from "../LazyLoadingImages/LazyLoadingImages";
 
 interface ExpandMoreProps extends IconButtonProps {
   expand: boolean;
@@ -35,8 +35,9 @@ export const DisplayCard = ({
 }) => {
   const { title, subtitle, details, image } = content;
 
-  const imageHeight = displaying === "masters" ? "425" : "263";
+  const imageHeight = displaying === "masters" ? 425 : 263;
   const subheader = displaying === "masters" ? "TaekwonMaru Staff" : "Taekwonmaru Programs";
+  const cardDetails = displaying === "masters" ? "Staff Experiences: " : "Class Description:";
 
   const [expanded, setExpanded] = React.useState(false);
 
@@ -55,13 +56,7 @@ export const DisplayCard = ({
       }}
     >
       <CardHeader className="card-header" title={title} subheader={subheader} />
-      <CardMedia
-        height={imageHeight}
-        component="img"
-        image={image}
-        alt="class-image"
-        id="card-image"
-      />
+      <LazyLoadingImage height={imageHeight} src={image} alt="class-image" id="card-image" />
       <CardContent className="card-content-div">
         <Typography variant="body2">{subtitle}</Typography>
         <ExpandMore
@@ -76,7 +71,7 @@ export const DisplayCard = ({
       </CardContent>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>Class Description:</Typography>
+          <Typography paragraph>{cardDetails}</Typography>
           {details.map((sentence, index) => {
             return (
               <div key={index}>
