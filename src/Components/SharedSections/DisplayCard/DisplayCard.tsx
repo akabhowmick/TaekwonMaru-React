@@ -37,7 +37,7 @@ export const DisplayCard = ({
 
   const imageHeight = displaying === "masters" ? 425 : 263;
   const subheader = displaying === "masters" ? "TaekwonMaru Staff" : "Taekwonmaru Programs";
-  const cardDetails = displaying === "masters" ? "Staff Experiences: " : "Class Description:";
+  const cardDetails = displaying === "masters" ? "Staff Experience: " : "Class Description:";
 
   const [expanded, setExpanded] = React.useState(false);
 

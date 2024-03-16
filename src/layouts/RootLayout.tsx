@@ -4,6 +4,7 @@ import { NavUnlisted } from "./NavbarStyles";
 import "./Navbar.css";
 import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
+import { CircleIndicator } from "../Components/SharedSections/Animations/Animations";
 
 const links = [
   { name: "About Us", path: "/about-us" },
@@ -21,6 +22,7 @@ export const RootLayout = () => {
 
   const linksWithNavLink = links.map((link, index) => (
     <NavLink
+      onClick={() => setShowNavbar(false)}
       key={index}
       to={link.path}
       className={({ isActive, isPending, isTransitioning }) =>
@@ -51,6 +53,7 @@ export const RootLayout = () => {
             )}
 
             <NavLink
+              onClick={() => setShowNavbar(false)}
               to="/"
               id="logo-with-title"
               className={({ isActive, isPending, isTransitioning }) =>
@@ -65,6 +68,7 @@ export const RootLayout = () => {
               <h2>TaekwonMaru</h2>
             </NavLink>
           </NavUnlisted>
+          <CircleIndicator />
         </nav>
       </header>
       <main>

@@ -3,7 +3,7 @@ export const NavUnlisted = styled.ul`
   display: flex;
   align-items: center;
   background-color: var(--light-red);
-  margin: 0;
+  margin: 0 0 -5px;
   padding: 1rem;
   flex-direction: row-reverse;
   justify-content: space-between;

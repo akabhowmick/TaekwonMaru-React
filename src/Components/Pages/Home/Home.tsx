@@ -22,18 +22,25 @@ export const Home = () => {
   return (
     <>
       <section className="home-page-section">
-        <img className="home-picture" src={homeImage} alt="banner-picture-taekwonmaru" />
+        <img
+          className="home-picture kenburns-top"
+          src={homeImage}
+          alt="banner-picture-taekwonmaru"
+        />
       </section>
       {sectionTitleAndMedia.map(({ sectionTitle, media }) => {
         return (
           <section className="light-bg" key={sectionTitle}>
             <div className="header-large">
-              <h3>{sectionTitle}</h3>
+              <h3 className="text-focus-in">{sectionTitle}</h3>
             </div>
             <div className="main-page-sections">
               {media.map((cardInfo) => {
                 return (
-                  <div className="card light-bg half-section img-1" key={cardInfo.title}>
+                  <div
+                    className="card light-bg half-section img-1 bounce-in-top"
+                    key={cardInfo.title}
+                  >
                     <HomeCardBox cardInfo={cardInfo} />
                   </div>
                 );

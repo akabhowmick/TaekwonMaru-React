@@ -1,4 +1,5 @@
 import "./App.css";
+import "./Components/SharedSections/Animations/Animations.css";
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -12,7 +13,6 @@ import { Contact } from "./Components/Pages/Contact/Contact";
 import { AboutUs } from "./Components/Pages/AboutUs/AboutUs";
 import { Program } from "./Components/Pages/Programs/Program";
 import { Schedule } from "./Components/Pages/Schedule/Schedule";
-import { CircleIndicator } from "./Components/SharedSections/Animations/Animations";
 import { TailSpin } from "react-loader-spinner";
 import { useState } from "react";
 
@@ -41,11 +41,10 @@ function App() {
       {isLoading ? (
         <div className="loading-container">
           <TailSpin />
-          <h2>Loading TaekwonMaru...</h2>
+          <h2 className="bounce-in-top">Loading TaekwonMaru...</h2>
         </div>
       ) : (
         <>
-          <CircleIndicator />
           <RouterProvider router={router} />
           <Footer />
         </>
