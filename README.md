@@ -15,3 +15,4 @@ This is a responsive website for TaekwonMaru. It is built using React, React-Rou
 - Typescript
 - Material UI 
 - CSS
+- HTML
