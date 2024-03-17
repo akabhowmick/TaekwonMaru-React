@@ -95,8 +95,10 @@ iframe {
 @media screen and (max-width: 37.5em) {
   .home-picture {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
+    height: fit-content;
+    padding-top: 5rem;
   }
   .card {
     min-width: 300px;

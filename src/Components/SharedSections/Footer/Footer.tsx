@@ -62,10 +62,16 @@ export const Footer = () => {
                 className="social"
                 href="https://www.facebook.com/profile.php?id=100057127915552"
                 role="button"
+                aria-label="Link to Facebook Account"
               >
                 <FacebookIcon fontSize="large" />
               </a>
-              <a className="social" href="https://www.instagram.com/marutkd1/" role="button">
+              <a
+                className="social"
+                aria-label="Link to Instagram Account"
+                href="https://www.instagram.com/marutkd1/"
+                role="button"
+              >
                 <InstagramIcon fontSize="large" />
               </a>
             </div>

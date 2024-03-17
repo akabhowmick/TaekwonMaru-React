@@ -41,8 +41,11 @@ export const RootLayout = () => {
     <div className="root-layout">
       <header className="nav-bar">
         <nav>
-          <NavUnlisted className="main-navbar-ul">
-            <div className="main-regular-links">{linksWithNavLink}</div>
+          <NavUnlisted
+            aria-label="Larger viewport navigation menu with links"
+            className="main-navbar-ul"
+          >
+            <ul className="main-regular-links">{linksWithNavLink}</ul>
             <div className="menu-icon" onClick={handleShowNavbar}>
               <MenuIcon />
             </div>

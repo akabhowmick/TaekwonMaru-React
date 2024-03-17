@@ -12,7 +12,6 @@
 
 .main-navbar-ul a li {
   color: var(--dark-red);
-  margin: 0 0.8rem;
   font-size: 1.3rem;
   position: relative;
   list-style: none;
@@ -21,18 +20,16 @@
   border-radius: 5px;
 }
 
-.main-navbar-ul a:nth-child(4) li{
+.main-navbar-ul a:nth-child(4) li {
   color: white;
   background-color: var(--bright-red);
   margin: 0 8px;
 }
 
-
 .main-navbar-ul a li:nth-child(n + 1):hover {
   background-color: var(--dark-red);
   color: white;
 }
-
 
 #logo-with-title {
   display: flex;
@@ -78,11 +75,6 @@
     left: 0;
   }
 
-  .main-navbar-ul a:nth-child(4) {
-    background-color: var(--light-red);
-    margin: 0;
-  }
-
   .nav-elements {
     right: 0;
     top: 70px;
@@ -98,16 +90,12 @@
   .nav-elements ul {
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
 
   .nav-elements ul li {
     margin-right: unset;
     margin-top: 22px;
     font-size: 1.5rem;
-  }
-
-  .main-navbar-ul a li,
-  .main-navbar-ul a:nth-child(4) li {
-    color: var(--dark-red);
   }
 }
