@@ -34,12 +34,36 @@ export const DisplayCard = ({
   displaying: string;
 }) => {
   const { title, subtitle, details, image } = content;
+  const [expanded, setExpanded] = React.useState(false);
 
-  const imageHeight = displaying === "masters" ? 425 : 263;
+  const getImageHeight = () => {
+    console.log("function called", window.innerWidth);
+    if (displaying === "masters") {
+      console.log("function called", window.innerWidth);
+      setImageHeight(425);
+    } else {
+      if (window.innerWidth > 1440) {
+        setImageHeight(400);
+      } else {
+        setImageHeight(263);
+      }
+    }
+  };
+
+  React.useEffect(() => {
+    getImageHeight();
+  }, []);
+
+  React.useEffect(() => {
+    window.addEventListener("resize", getImageHeight);
+    return () => window.removeEventListener("resize", getImageHeight);
+  });
+
+  const [imageHeight, setImageHeight] = React.useState(0);
+
+  // const imageHeight = displaying === "masters" ? 425 : 263;
   const subheader = displaying === "masters" ? "TaekwonMaru Staff" : "Taekwonmaru Programs";
   const cardDetails = displaying === "masters" ? "Staff Experience: " : "Class Description:";
-
-  const [expanded, setExpanded] = React.useState(false);
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
@@ -58,7 +82,7 @@ export const DisplayCard = ({
       <CardHeader className="card-header" title={title} subheader={subheader} />
       <LazyLoadingImage height={imageHeight} src={image} alt="class-image" id="card-image" />
       <CardContent className="card-content-div">
-        <Typography variant="body2">{subtitle}</Typography>
+        <Typography variant="body1">{subtitle}</Typography>
         <ExpandMore
           id="expand-btn"
           expand={expanded}

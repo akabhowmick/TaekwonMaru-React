@@ -8,10 +8,10 @@ export const Footer = () => {
       <div className="p-4 pb-0">
         <div className="main-footer-div">
           <div>
-            <h6 className="text-white text-uppercase mb-4 font-weight-bold">OPENING HOURS:</h6>
+            <h4 className="text-white text-uppercase mb-4 font-weight-bold">OPENING HOURS:</h4>
 
             <table>
-              <tbody className="font-weight-normal">
+              <tbody>
                 <tr>
                   <td>Mon,Wed,Thu:</td>
                   <td>3:00pm - 9:00pm</td>
@@ -30,7 +30,7 @@ export const Footer = () => {
           <hr className="w-100 clearfix" />
 
           <div>
-            <h6 className="text-white text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <h4 className="text-white text-uppercase mb-4 font-weight-bold">Contact</h4>
             <p className="text-white">
               <i className="text-white fas fa-home mr-3"></i>
               <a
@@ -54,8 +54,8 @@ export const Footer = () => {
             </p>
           </div>
           <hr className="w-100 clearfix" />
-          <div>
-            <h6 className="text-white text-uppercase mb-4 font-weight-bold">TaekwonMaru</h6>
+          <div className="social-follow-div">
+            <h4 className="text-white text-uppercase mb-4 font-weight-bold">TaekwonMaru</h4>
             <p className="text-white">We hope to hear from you soon! You can also follow us!</p>
             <div id="social-links">
               <a

@@ -40,7 +40,10 @@ function App() {
     <>
       {isLoading ? (
         <div className="loading-container">
-          <TailSpin />
+          <TailSpin
+            color="var(--dark-red)"
+            ariaLabel="tail-spin-loading"
+          />
           <h2 className="bounce-in-top">Loading TaekwonMaru...</h2>
         </div>
       ) : (
