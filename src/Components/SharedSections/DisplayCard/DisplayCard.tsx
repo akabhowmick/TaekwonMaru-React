@@ -37,9 +37,7 @@ export const DisplayCard = ({
   const [expanded, setExpanded] = React.useState(false);
 
   const getImageHeight = () => {
-    console.log("function called", window.innerWidth);
     if (displaying === "masters") {
-      console.log("function called", window.innerWidth);
       setImageHeight(425);
     } else {
       if (window.innerWidth > 1440) {

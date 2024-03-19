@@ -55,7 +55,7 @@
 /* large screen */
 @media screen and (min-width: 1440px) {
   .portfolio-card {
-    width: 400px;
+    width: 450px;
   }
   .portfolio-card .MuiTypography-h5{
     font-size: 1.75rem;

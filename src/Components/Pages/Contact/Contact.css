@@ -61,12 +61,6 @@
   justify-content: center;
 }
 
-.form-row-1 {
-  display: flex;
-  gap: 1rem;
-  flex-direction: column;
-}
-
 .contact-form-div,
 .contact-message-div {
   color: black;
