@@ -56,7 +56,10 @@ export const Footer = () => {
           <hr className="w-100 clearfix" />
           <div className="social-follow-div">
             <h4 className="text-white text-uppercase mb-4 font-weight-bold">TaekwonMaru</h4>
-            <p className="text-white">We hope to hear from you soon! You can also follow us!</p>
+            <p className="text-white">
+              We hope to hear from you soon! <br />
+              You can also follow us!
+            </p>
             <div id="social-links">
               <a
                 className="social"

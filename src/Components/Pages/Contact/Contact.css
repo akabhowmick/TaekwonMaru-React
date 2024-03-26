@@ -30,6 +30,10 @@
   border: 2px solid var(--bright-red);
 }
 
+.text span, .text a {
+  font-size: 1.25rem;
+}
+
 .red-text {
   color: var(--dark-red);
 }
@@ -66,10 +70,11 @@
   color: black;
   display: flex;
   flex-direction: column;
+  margin: 1rem 0;
 }
 
 .contact-form-input {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   color: black;
   padding: 0.375rem 0.75rem;
   background-color: white;
@@ -144,7 +149,7 @@
     gap: 0;
   }
   .contact-form-div {
-    margin: 0.5rem auto;
+    margin: 1rem auto;
     width: -webkit-fill-available;
   }
 }
