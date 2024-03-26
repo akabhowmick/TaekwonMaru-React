@@ -5,8 +5,6 @@ import ContactsIcon from "@mui/icons-material/Contacts";
 import EmailIcon from "@mui/icons-material/Email";
 import OpenInBrowserIcon from "@mui/icons-material/OpenInBrowser";
 
-// Todo Redo form so that it uses react formik and such
-
 const contactLinksAndIcons = [
   {
     icon: <ContactsIcon />,

@@ -7,6 +7,23 @@ const serviceId = "service_x1v468p";
 const templateId = "template_8przsfw";
 const publicKey = "aI0R8QkNkegFHRxBK";
 
+const classOptions = [
+  "Little Tiger (2-5)",
+  "Children (6-9)",
+  "Pre-Teen (10-13)",
+  "Advanced Teen (14-17)",
+  "Adults (18+)",
+  "Kpop Dance Class (6+)",
+];
+
+const contactFormInput = [
+  { name: "Name", label: "from_name" },
+  { name: "Email", label: "reply_to" },
+  { name: "Phone Number", label: "phone_number" },
+  { name: "Message", label: "message" },
+];
+
+
 export const ContactForm = () => {
   const [buttonState, setButtonState] = useState("Send Message");
 
@@ -16,7 +33,7 @@ export const ContactForm = () => {
       phone_number: "", // phoneNumber of user
       reply_to: "", // user email
       message: "", // message of email
-      class_of_interest: "", //class that user wants to ask about
+      class_of_interest: classOptions[0], //class that user wants to ask about
     },
     validationSchema: Yup.object({
       from_name: Yup.string().required("* Name field is required"),
@@ -44,13 +61,6 @@ export const ContactForm = () => {
       }
     },
   });
-
-  const contactFormInput = [
-    { name: "Name", label: "from_name" },
-    { name: "Email", label: "reply_to" },
-    { name: "Phone Number", label: "phone_number" },
-    { name: "Message", label: "message" },
-  ];
 
   // allows the input to have access to correct formik values
   const getFormikValues = (label: string) => {
@@ -104,15 +114,6 @@ export const ContactForm = () => {
       </div>
     );
   });
-
-  const classOptions = [
-    "Little Tiger (2-5)",
-    "Children (6-9)",
-    "Pre-Teen (10-13)",
-    "Advanced Teen (14-17)",
-    "Adults (18+)",
-    "Kpop Dance Class (6+)",
-  ];
 
   const selectClasses = (
     <div className="contact-form-div">
