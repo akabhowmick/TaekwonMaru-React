@@ -5,26 +5,33 @@ const eventsInfo = [
   {
     title: "KPOP - Dance:",
     details: [
-      "Friday 6:30-7:30pm (03/01~03/29)",
-      "PH1harmony - Back Down",
-      "Saturday 1:30pm-2:20pm (03/02 ~ 03/30)",
-      "Le Sserafim - Easy",
+      "Friday 6:30-7:30pm (04/05~04/26)",
+      "Enhypen - Medley",
+      "Saturday 1:30pm-2:20pm (04/06 ~ 04/27)",
+      "Straykids - La La La",
     ],
   },
   {
-    title: "March Events 2024:",
-    details: ["03/23/23 Hong-Ik Championship", "", "", ""],
+    title: "April Events 2024:",
+    details: [
+      "04/13 - Little Tiger Test",
+      "04/15 - Teen & Children Test",
+      "04/12 - Charles Campagne and Robbins Lane school performances",
+      "04/22 - 27 Buddy Week",
+    ],
   },
   {
     title: "JL Meeting:",
     details: [
-      "03/05/24 07:20pm - 07:55pm",
+      "04/29/24 07:20pm - 07:55pm",
       "Mandatory Monthly Meeting for Junior Leaders!",
       "",
       "",
     ],
   },
 ];
+
+const scheduleTitle = "UPCOMING EVENTS FOR Apr. 2024";
 
 const eventContainer = eventsInfo.map((event) => {
   return (
@@ -52,7 +59,7 @@ export const Schedule = () => {
       </div>
 
       <div className="events">
-        <h2>UPCOMING EVENTS FOR Mar. 2024</h2>
+        <h2>{scheduleTitle}</h2>
         <div className="events-grid">{eventContainer}</div>
       </div>
     </section>
