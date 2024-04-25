@@ -25,7 +25,7 @@ table td {
   padding: 0.75rem;
   vertical-align: top;
   border-top: 1px solid #dee2e6;
-  font-size: 1.25rem; 
+  font-size: 1.25rem;
 }
 
 .main-footer-div {
@@ -59,7 +59,7 @@ a.footer-text {
   border-radius: 8px;
 }
 
-.social-follow-div .text-white{
+.social-follow-div .text-white {
   text-align: center;
 }
 
@@ -90,13 +90,9 @@ a.social:hover {
   width: 75%;
 }
 
-
-
 @media only screen and (max-width: 37.5em) {
   .main-footer-div {
-    display: flex;
     flex-direction: column;
-    gap: 10px;
   }
   footer hr.clearfix {
     margin: 0 auto 1rem;
@@ -110,10 +106,15 @@ a.social:hover {
 
 @media only screen and (max-width: 56.25em) {
   .main-footer-div {
-    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
   }
   table td {
-    font-size: 1.15rem; 
+    font-size: 1.15rem;
   }
   footer p {
     font-size: 1.15rem;

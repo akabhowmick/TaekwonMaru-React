@@ -16,14 +16,14 @@ const eventsInfo = [
     details: [
       "04/13 - Little Tiger Test",
       "04/15 - Teen & Children Test",
-      "04/12 - Charles Campagne and Robbins Lane school performances",
+      "04/12 - Charles Campagne and Robbins Lane Elementary School performances",
       "04/22 - 27 Buddy Week",
     ],
   },
   {
     title: "JL Meeting:",
     details: [
-      "04/29/24 07:20pm - 07:55pm",
+      "04/22/24 07:20pm - 07:55pm",
       "Mandatory Monthly Meeting for Junior Leaders!",
       "",
       "",
