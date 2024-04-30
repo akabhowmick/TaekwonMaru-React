@@ -31,7 +31,7 @@ const eventsInfo = [
   },
 ];
 
-const scheduleTitle = "UPCOMING EVENTS FOR Apr. 2024";
+const scheduleTitle = "UPCOMING EVENTS FOR May 2024";
 
 const eventContainer = eventsInfo.map((event) => {
   return (
