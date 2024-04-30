@@ -5,14 +5,14 @@ const eventsInfo = [
   {
     title: "KPOP - Dance:",
     details: [
-      "Friday 6:30-7:30pm (04/05~04/26)",
-      "Enhypen - Medley",
-      "Saturday 1:30pm-2:20pm (04/06 ~ 04/27)",
-      "Straykids - La La La",
+      "Friday 6:30-7:30pm (05/03~05/24)",
+      "NCT Dream - Smoothie",
+      "Saturday 1:30pm-2:20pm (05/04 ~ 05/25)",
+      "TWS - Plot Twist",
     ],
   },
   {
-    title: "April Events 2024:",
+    title: "May Events 2024:",
     details: [
       "04/13 - Little Tiger Test",
       "04/15 - Teen & Children Test",
