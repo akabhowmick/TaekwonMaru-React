@@ -14,16 +14,16 @@ const eventsInfo = [
   {
     title: "May Events 2024:",
     details: [
-      "04/13 - Little Tiger Test",
-      "04/15 - Teen & Children Test",
-      "04/12 - Charles Campagne and Robbins Lane Elementary School performances",
-      "04/22 - 27 Buddy Week",
+      "05/27 - Memorial Day - No school",
+      "",
+      "",
+      "",
     ],
   },
   {
     title: "JL Meeting:",
     details: [
-      "04/22/24 07:20pm - 07:55pm",
+      "05/07/24 07:20pm - 07:55pm",
       "Mandatory Monthly Meeting for Junior Leaders!",
       "",
       "",
