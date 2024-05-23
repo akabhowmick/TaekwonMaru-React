@@ -15,7 +15,7 @@ const eventsInfo = [
     title: "May Events 2024:",
     details: [
       "05/27 - Memorial Day - No school",
-      "",
+      "05/31 - School Performances at Baylis and Cantiague Elementary Schools",
       "",
       "",
     ],
@@ -23,7 +23,7 @@ const eventsInfo = [
   {
     title: "JL Meeting:",
     details: [
-      "05/07/24 07:20pm - 07:55pm",
+      "05/28/24 07:20pm - 07:55pm",
       "Mandatory Monthly Meeting for Junior Leaders!",
       "",
       "",
