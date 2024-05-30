@@ -5,18 +5,18 @@ const eventsInfo = [
   {
     title: "KPOP - Dance:",
     details: [
-      "Friday 6:30-7:30pm (05/03~05/24)",
-      "NCT Dream - Smoothie",
-      "Saturday 1:30pm-2:20pm (05/04 ~ 05/25)",
-      "TWS - Plot Twist",
+      "Friday 6:30-7:30pm (06/07~06/28)",
+      "TXT - Deja Vu",
+      "Saturday 1:30pm-2:20pm (06/01 ~ 06/22)",
+      "Jennie & Zico - Spot",
     ],
   },
   {
-    title: "May Events 2024:",
+    title: "June Events 2024:",
     details: [
-      "05/27 - Memorial Day - No school",
-      "05/31 - School Performances at Baylis and Cantiague Elementary Schools",
-      "",
+      "06/11 - Black Belt Test",
+      "06/22 - Little Tiger Test",
+      "06/24 - Children and Teens' Test",
       "",
     ],
   },
@@ -31,7 +31,7 @@ const eventsInfo = [
   },
 ];
 
-const scheduleTitle = "UPCOMING EVENTS FOR May 2024";
+const scheduleTitle = "UPCOMING EVENTS FOR June 2024";
 
 const eventContainer = eventsInfo.map((event) => {
   return (
