@@ -3,7 +3,7 @@ import trialImage from "../assets/children-home.png";
 import promoImage from "../assets/Promo/marutkd-promo-49.jpg";
 import homePageImage from "../assets/home-page.png";
 import schoolIcon from "../assets/tkd-logo.png";
-import schedule from "../assets/schedule.png";
+import schedule from "../assets/summer-schedule2024.png";
 
 export const homeImage = homePageImage;
 export const taekwonMaruLogo = schoolIcon;

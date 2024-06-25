@@ -5,25 +5,25 @@ const eventsInfo = [
   {
     title: "KPOP - Dance:",
     details: [
-      "Friday 6:30-7:30pm (06/07~06/28)",
-      "TXT - Deja Vu",
-      "Saturday 1:30pm-2:20pm (06/01 ~ 06/22)",
-      "Jennie & Zico - Spot",
+      "Friday 5:45-6:45pm (07/05~07/26)",
+      "Riize - Impossible",
+      "Saturday 1:00pm-1:50pm (06/29~07/20)",
+      "New Jeans - How Sweet",
     ],
   },
   {
-    title: "June Events 2024:",
+    title: "July Events 2024:",
     details: [
-      "06/11 - Black Belt Test",
-      "06/22 - Little Tiger Test",
-      "06/24 - Children and Teens' Test",
+      "07/04 - No School",
+      "",
+      "",
       "",
     ],
   },
   {
     title: "JL Meeting:",
     details: [
-      "05/28/24 07:20pm - 07:55pm",
+      "07/30/24 07:05pm - 07:35pm",
       "Mandatory Monthly Meeting for Junior Leaders!",
       "",
       "",
@@ -31,7 +31,7 @@ const eventsInfo = [
   },
 ];
 
-const scheduleTitle = "UPCOMING EVENTS FOR June 2024";
+const scheduleTitle = "UPCOMING EVENTS FOR July 2024";
 
 const eventContainer = eventsInfo.map((event) => {
   return (
