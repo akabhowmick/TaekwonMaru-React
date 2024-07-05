@@ -1,6 +1,6 @@
 import { HomeCardInfo } from "../types/interfaces";
 import trialImage from "../assets/children-home.png";
-import promoImage from "../assets/Promo/marutkd-promo-49.jpg";
+import promoImage from "../assets/Promo/summer-promo.png";
 import homePageImage from "../assets/home-page.png";
 import schoolIcon from "../assets/tkd-logo.png";
 import schedule from "../assets/summer-schedule2024.png";
