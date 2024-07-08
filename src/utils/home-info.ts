@@ -17,10 +17,10 @@ const trialClassInfo: HomeCardInfo = {
 };
 
 const promoInfo: HomeCardInfo = {
-  title: "$49 - SPECIAL PROMOTION!",
+  title: "$199 - SUMMER PROMOTION!",
   src: promoImage,
   description:
-    "$49 for 2 weeks, 2 classes/week as a easy to start promotional package for all new students!",
+    "$199 for 6 weeks, 2 classes/week as a easy to start promotional package for all new students! This offer includes a t-shirt and TaekwonMaru shorts!!",
   type: "image",
 };
 
