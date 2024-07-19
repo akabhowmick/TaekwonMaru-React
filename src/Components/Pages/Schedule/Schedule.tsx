@@ -7,8 +7,8 @@ const eventsInfo = [
     details: [
       "Friday 5:45-6:45pm (07/05~07/26)",
       "Riize - Impossible",
-      "Saturday 1:00pm-1:50pm (06/29~07/20)",
-      "New Jeans - How Sweet",
+      "Saturday 1:00pm-1:50pm (07/27~08/24)",
+      "TXT - I will see you tomorrow",
     ],
   },
   {
