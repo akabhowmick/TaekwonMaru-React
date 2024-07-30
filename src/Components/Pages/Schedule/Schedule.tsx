@@ -1,24 +1,22 @@
 import { scheduleImage } from "../../../utils/home-info";
 import "./Schedule.css";
 
+const currentMonth =
+  new Date().toLocaleString("default", { month: "long" }) + " " + new Date().getFullYear();
+
 const eventsInfo = [
   {
     title: "KPOP - Dance:",
     details: [
-      "Friday 5:45-6:45pm (07/05~07/26)",
-      "Riize - Impossible",
+      "Friday 5:45-6:45pm (08/2,9,23,30)",
+      "Ateez - Crazy Form & Work",
       "Saturday 1:00pm-1:50pm (07/27~08/24)",
       "TXT - I will see you tomorrow",
     ],
   },
   {
-    title: "July Events 2024:",
-    details: [
-      "07/04 - No School",
-      "",
-      "",
-      "",
-    ],
+    title: currentMonth + " Events:",
+    details: ["07/04 - No School", "", "", ""],
   },
   {
     title: "JL Meeting:",
@@ -31,7 +29,7 @@ const eventsInfo = [
   },
 ];
 
-const scheduleTitle = "UPCOMING EVENTS FOR July 2024";
+const scheduleTitle = "Upcoming Events For: " + currentMonth;
 
 const eventContainer = eventsInfo.map((event) => {
   return (
