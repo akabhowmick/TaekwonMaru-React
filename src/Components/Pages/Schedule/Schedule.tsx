@@ -16,12 +16,12 @@ const eventsInfo = [
   },
   {
     title: currentMonth + " Events:",
-    details: ["07/04 - No School", "", "", ""],
+    details: ["08/29 - Promotion Test: Teens and Children", "", "", ""],
   },
   {
     title: "JL Meeting:",
     details: [
-      "07/30/24 07:05pm - 07:35pm",
+      "08/27/24 07:05pm - 07:35pm",
       "Mandatory Monthly Meeting for Junior Leaders!",
       "",
       "",
