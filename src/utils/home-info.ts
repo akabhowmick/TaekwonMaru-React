@@ -1,13 +1,14 @@
 import { HomeCardInfo } from "../types/interfaces";
 import trialImage from "../assets/children-home.png";
-import promoImage from "../assets/Promo/summer_2024_promo.jpg";
+// import promoImage from "../assets/Promo/summer_2024_promo.jpg";
+import promoImage from "../assets/Promo/marutkd-lawn-sign-23.jpg";
 import homePageImage from "../assets/home-page.png";
 import schoolIcon from "../assets/tkd-logo.png";
 import schedule from "../assets/summer-schedule2024.png";
 
 export const homeImage = homePageImage;
 export const taekwonMaruLogo = schoolIcon;
-export const scheduleImage = schedule; 
+export const scheduleImage = schedule;
 
 const trialClassInfo: HomeCardInfo = {
   title: "$10 - TRIAL LESSON",
@@ -16,11 +17,20 @@ const trialClassInfo: HomeCardInfo = {
   type: "image",
 };
 
+// Summer Promo
+// const promoInfo: HomeCardInfo = {
+//   title: "$199 - SUMMER PROMOTION!",
+//   src: promoImage,
+//   description:
+//     "$199 for 6 weeks, 2 classes/week as a easy to start promotional package for all new students! This offer includes a t-shirt and TaekwonMaru shorts!!",
+//   type: "image",
+// };
+
 const promoInfo: HomeCardInfo = {
-  title: "$199 - SUMMER PROMOTION!",
+  title: "$59 - SUMMER PROMOTION!",
   src: promoImage,
   description:
-    "$199 for 6 weeks, 2 classes/week as a easy to start promotional package for all new students! This offer includes a t-shirt and TaekwonMaru shorts!!",
+    "$59 for 2 weeks, 2 classes/week as a easy to start promotional package for all new students! This offer includes a t-shirt and TaekwonMaru shorts!!",
   type: "image",
 };
 
