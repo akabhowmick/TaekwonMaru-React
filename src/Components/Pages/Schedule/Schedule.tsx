@@ -10,7 +10,7 @@ const eventsInfo = [
     details: [
       "Friday 5:45-6:45pm (08/2,9,23,30)",
       "Ateez - Crazy Form & Work",
-      "Saturday 1:00pm-1:50pm (07/27~08/24)",
+      "Saturday 1:00pm-1:50pm (08/31~09/21)",
       "TXT - I will see you tomorrow",
     ],
   },
