@@ -8,15 +8,20 @@ const eventsInfo = [
   {
     title: "KPOP - Dance:",
     details: [
-      "Friday 5:45-6:45pm (08/2,9,23,30)",
-      "Ateez - Crazy Form & Work",
-      "Saturday 1:00pm-1:50pm (08/31~09/21)",
+      "Friday 6:45-7:45pm (09/06 ~ 09/27)",
+      "NCT 127 ",
+      "Saturday 1:30pm-2:20pm (08/31 ~ 09/21)",
       "TXT - I will see you tomorrow",
     ],
   },
   {
     title: currentMonth + " Events:",
-    details: ["08/29 - Promotion Test: Teens and Children", "", "", ""],
+    details: [
+      "09/02 - No Class (Labor Day)",
+      "09/03 - Back to School Schedule",
+      "09/23-28 - Buddy Week",
+      "",
+    ],
   },
   {
     title: "JL Meeting:",
