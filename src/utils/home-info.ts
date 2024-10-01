@@ -54,14 +54,14 @@ export const HomeCardVideoBoxes: HomeCardInfo[] = [govCupFirstPlace, foxFive];
 
 const kpopTrial: HomeCardInfo = {
   title: "$25 - TRIAL CLASS",
-  src: "https://www.youtube.com/embed/R1SuqrSkqEE?si=tUKkw0Hb6eLYFMAy",
+  src: "https://www.youtube.com/embed/wgeDuo1tvYU?si=qx9s1ILjkTSGSmm5",
   description: "Take one regular className with our members!",
   type: "video",
 };
 
 const kpopMonthly: HomeCardInfo = {
   title: "$80 - MONTHLY CLASS",
-  src: "https://www.youtube.com/embed/q8YM7rh4k60?si=Ys3ERAu6VuGr0MNr",
+  src: "https://www.youtube.com/embed/RfVxg0ij3rc?si=o5JFkR56VELz3-MX",
   description: "Learn one full choreography in 4 weeks!",
   type: "video",
 };
