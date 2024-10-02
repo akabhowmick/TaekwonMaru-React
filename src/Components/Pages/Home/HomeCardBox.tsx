@@ -24,7 +24,7 @@ export const HomeCardBox = ({ cardInfo }: { cardInfo: HomeCardInfo}) => {
       {mediaToDisplay}
       <h3 className="subheader">{title}</h3>
       <div className="description">{description}</div>
-      <a href="./html/contact-us.html" className="btn-primary">
+      <a href="/contact" className="btn-primary">
         Book a Class
       </a>
     </>
