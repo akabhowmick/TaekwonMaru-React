@@ -6,10 +6,10 @@ export const schedule_info = {
     {
       title: "KPOP - Dance Class Schedule:",
       details: [
-        "Friday 6:45-7:45pm (09/06 ~ 09/27)",
-        "NCT 127 - Walk",
+        "Friday 6:45-7:45pm (10/04 ~ 10/25)",
+        "BTS - I Need U ",
         "Saturday 1:30pm-2:20pm (09/28 ~ 10/19)",
-        "NewJeans/Supernatural",
+        "NewJeans - Supernatural",
         "",
       ],
     },
@@ -18,7 +18,7 @@ export const schedule_info = {
       details: [
         "10/14 - No Class (Columbus Day)",
         "10/23 - Championship Practice (change in Wednesday schedule)",
-        "10/25 - Halloween Classes!",
+        "10/24 - Halloween Classes!",
         "10/26 - Promotion Test: Little Tigers",
         "10/28 - Promotion Test: Teens and Children",
       ],
