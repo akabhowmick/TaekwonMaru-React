@@ -13,7 +13,7 @@ export const scheduleImage = schedule;
 const trialClassInfo: HomeCardInfo = {
   title: "$10 - TRIAL LESSON",
   src: trialImage,
-  description: "Take one regular className with our members, and meet our masters and students!",
+  description: "Take one regular class with our members, and meet our masters and students!",
   type: "image",
 };
 
