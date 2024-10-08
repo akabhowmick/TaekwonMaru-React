@@ -34,5 +34,5 @@ export const schedule_info = {
       ],
     },
   ],
-  scheduleTitle: `Upcoming Events For:  + ${currentMonth}`,
+  scheduleTitle: `Upcoming Events For: ${currentMonth}`,
 };

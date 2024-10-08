@@ -4,6 +4,7 @@ import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import ContactsIcon from "@mui/icons-material/Contacts";
 import EmailIcon from "@mui/icons-material/Email";
 import OpenInBrowserIcon from "@mui/icons-material/OpenInBrowser";
+import { SignUpSteps } from "./SignUpSteps";
 
 const contactLinksAndIcons = [
   {
@@ -71,6 +72,7 @@ export const Contact = () => {
           </div>
         </div>
       </section>
+      <SignUpSteps />
     </>
   );
 };

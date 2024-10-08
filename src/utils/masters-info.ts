@@ -63,11 +63,11 @@ const mr: MasterInfo = {
 };
 
 const os: MasterInfo = {
-  title: "Master Owen",
-  subtitle: "Master Owen Shin",
+  title: "Instructor Owen",
+  subtitle: "Instructor Owen Shin",
   image: OSPicture,
   details: [
-    "Taekwondo 4th Degree Black Belt",
+    "Taekwondo 3rd Degree Black Belt",
     "Black Hawk Demo Team Leader 2021, 2023, 2024",
     "St John's University major in Radiology",
     "2018-2021 NYS 1st Place Governor’s Cup Demo Team",

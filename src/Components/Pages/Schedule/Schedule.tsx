@@ -10,7 +10,7 @@ export const Schedule = () => {
         <hr />
         {event.details.map((detail, index) => {
           return (
-            <p key={index} className={detail.length > 0 ? "" : "lies"}>
+            <p key={index} className={`mb-2 text-left ${detail.length > 0 ? "" : "lies"}`}>
               {detail}
             </p>
           );
