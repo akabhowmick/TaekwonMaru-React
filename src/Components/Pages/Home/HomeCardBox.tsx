@@ -22,7 +22,7 @@ export const HomeCardBox = ({ cardInfo }: { cardInfo: HomeCardInfo}) => {
   return (
     <>
       {mediaToDisplay}
-      <h3 className="subheader">{title}</h3>
+      <h3 className="subheader text-2xl underline">{title}</h3>
       <div className="description">{description}</div>
       <a href="/contact" className="btn-primary">
         Book a Class
