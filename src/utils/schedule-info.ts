@@ -16,7 +16,7 @@ export const schedule_info = {
     {
       title: currentMonth + " Events:",
       details: [
-        "10/14 - No Class (Columbus Day)",
+        "10/14 - No Class (Indigenous Peoples' Day)",
         "10/23 - Championship Practice (change in Wednesday schedule)",
         "10/24 - Halloween Classes!",
         "10/26 - Promotion Test: Little Tigers",
