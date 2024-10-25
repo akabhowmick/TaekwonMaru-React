@@ -8,7 +8,7 @@ import MRPicture from "../assets/Masters/mr.jpg";
 // import AJPicture from "../assets/Masters/aj.jpg";
 
 const ab: MasterInfo = {
-  title: "MasterAkash",
+  title: "Master Akash",
   subtitle: "Akash Bhowmick",
   image: ABPicture,
   details: [

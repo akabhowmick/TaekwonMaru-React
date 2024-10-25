@@ -5,12 +5,12 @@ import { schedule_info } from "../../../utils/schedule-info";
 export const Schedule = () => {
   const eventContainer = schedule_info.eventsInfo.map((event) => {
     return (
-      <div key={event.title} className="table-entry col-lg-4 col-md-6 mb-4 mb-md-0">
-        <h3 className="text-uppercase mb-4 font-weight-bold mt-1">{event.title}</h3>
+      <div key={event.title} className="lg:max-w-[30%]">
+        <h3 className="text-uppercase text-xl mb-4 font-weight-bold mt-1">{event.title}</h3>
         <hr />
         {event.details.map((detail, index) => {
           return (
-            <p key={index} className={`mb-2 text-left ${detail.length > 0 ? "" : "lies"}`}>
+            <p key={index} className={`mb-2 text-base xl:text-lg text-left ${detail.length > 0 ? "" : "lies"}`}>
               {detail}
             </p>
           );
@@ -29,7 +29,7 @@ export const Schedule = () => {
 
       <div className="events">
         <h2>{schedule_info.scheduleTitle}</h2>
-        <div className="events-grid">{eventContainer}</div>
+        <div className="flex flex-wrap md:justify-center md:flex-nowrap gap-4 xl:gap-8">{eventContainer}</div>
       </div>
     </section>
   );

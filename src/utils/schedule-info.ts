@@ -4,12 +4,12 @@ const currentMonth =
 export const schedule_info = {
   eventsInfo: [
     {
-      title: "KPOP - Dance Class Schedule:",
+      title: "KPOP - Dance Class:",
       details: [
-        "Friday 6:45-7:45pm (10/04 ~ 10/25)",
-        "BTS - I Need U ",
-        "Saturday 1:30pm-2:20pm (09/28 ~ 10/19)",
-        "NewJeans - Supernatural",
+        "Friday 6:45-7:45pm (11/1 ~ 11/22)",
+        "Bad Villain - +82",
+        "Saturday 1:30pm-2:20pm (10/26 ~ 11/16)",
+        "Straykids - Chk Chk Boom",
         "",
       ],
     },
