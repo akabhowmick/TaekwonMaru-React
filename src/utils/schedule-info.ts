@@ -16,17 +16,17 @@ export const schedule_info = {
     {
       title: currentMonth + " Events:",
       details: [
-        "10/14 - No Class (Indigenous Peoples' Day)",
-        "10/23 - Championship Practice (change in Wednesday schedule)",
-        "10/24 - Halloween Classes!",
-        "10/26 - Promotion Test: Little Tigers",
-        "10/28 - Promotion Test: Teens and Children",
+        "11/17 - NYS Championship",
+        "11/28 - 30 No Classes (Thanksgiving Break)",
+        "",
+        "",
+        "",
       ],
     },
     {
       title: "Junior Leader Meeting:",
       details: [
-        "10/29/24 07:20pm - 07:55pm",
+        "11/26/24 07:20pm - 07:55pm",
         "Mandatory Monthly Meeting for Junior Leaders!",
         "",
         "",
