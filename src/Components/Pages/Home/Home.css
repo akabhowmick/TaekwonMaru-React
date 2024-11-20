@@ -37,7 +37,7 @@
 
 iframe {
   width: 100%;
-  max-width: 650px;
+  aspect-ratio: 3/2;
   min-height: 350px;
   margin: 0 auto;
   vertical-align: middle;
