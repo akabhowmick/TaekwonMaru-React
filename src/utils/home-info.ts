@@ -5,6 +5,7 @@ import promoImage from "../assets/Promo/promoBTS2024.jpg";
 import homePageImage from "../assets/home-page.png";
 import schoolIcon from "../assets/tkd-logo.png";
 import schedule from "../assets/Schedule/fall-2025.png";
+import demoImage from "../assets/demo1.jpg"; 
 
 export const homeImage = homePageImage;
 export const taekwonMaruLogo = schoolIcon;
@@ -37,10 +38,10 @@ const promoInfo: HomeCardInfo = {
 export const HomeCardImageBoxes: HomeCardInfo[] = [trialClassInfo, promoInfo];
 
 const govCupFirstPlace: HomeCardInfo = {
-  title: "NYS Governor's Cup 1st Place!",
-  src: "https://www.youtube.com/embed/FNL4_wwPkZU",
+  title: "NYS Governor's Cup 2024: 1st Place!",
+  src: demoImage,
   description: "",
-  type: "video",
+  type: "image",
 };
 
 const foxFive: HomeCardInfo = {

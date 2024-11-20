@@ -34,10 +34,10 @@ function App() {
 
   setTimeout(() => {
     setIsLoading(false);
-  }, 2000);
+  }, 1500);
 
   return (
-    <>
+    <div>
       {isLoading ? (
         <div className="loading-container">
           <TailSpin
@@ -52,7 +52,7 @@ function App() {
           <Footer />
         </>
       )}
-    </>
+    </div>
   );
 }
 

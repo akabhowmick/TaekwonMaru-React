@@ -13,20 +13,19 @@ export const HomeCardBox = ({ cardInfo }: { cardInfo: HomeCardInfo}) => {
         height="315"
         src={src}
         title="YouTube video player"
-        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
         allowFullScreen
       ></iframe>
     );
 
   return (
-    <>
+    <div className="p-4 flex flex-col">
       {mediaToDisplay}
       <h3 className="subheader text-2xl underline">{title}</h3>
       <div className="description">{description}</div>
       <a href="/contact" className="btn-primary">
         Book a Class
       </a>
-    </>
+    </div>
   );
 };
