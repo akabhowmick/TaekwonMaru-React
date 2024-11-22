@@ -9,8 +9,6 @@ export const HomeCardBox = ({ cardInfo }: { cardInfo: HomeCardInfo}) => {
       <img src={src} alt={`image for {title}`} loading="lazy" />
     ) : (
       <iframe
-        width="560"
-        height="315"
         src={src}
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"

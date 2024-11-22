@@ -5,7 +5,7 @@ import promoImage from "../assets/Promo/promoBTS2024.jpg";
 import homePageImage from "../assets/home-page.png";
 import schoolIcon from "../assets/tkd-logo.png";
 import schedule from "../assets/Schedule/fall-2025.png";
-import demoImage from "../assets/demo1.jpg"; 
+import demoImage from "../assets/demo3.png"; 
 
 export const homeImage = homePageImage;
 export const taekwonMaruLogo = schoolIcon;
