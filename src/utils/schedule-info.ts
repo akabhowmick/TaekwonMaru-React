@@ -6,21 +6,20 @@ export const schedule_info = {
     {
       title: "KPOP - Dance Class:",
       details: [
-        "Friday 6:45-7:45pm (12/06,13,20 & 01/03)",
-        "Enhypen - No Doubt ",
-        "Saturday 1:30pm-2:20pm (11/25, 12/07,14,21)",
-        "Riize - Boom Boom Base ",
-        "",
+        "Friday 6:45-7:45pm (01/10, 17, 24, 31)",
+        "Ateez - Ice on my Teeth ",
+        "Saturday 1:30pm-2:20pm (01/04, 11, 18, 25)",
+        "G-Dragon - Home Sweet Home ",
+        "Rose - APT",
       ],
     },
     {
       title: currentMonth + " Events:",
       details: [
-        "12/10 - Black Belt Test",
-        "12/21 - Little Tiger Test",
-        "12/23 - Regular Test",
-        "12/24, 25 - School Closed (Christmas Break)",
-        "12/31, 1/1 - School Closed (New Year)",
+        "01/20 - No class (MLK Day)",
+        "01/30 - Family class",
+        "",
+        ""
       ],
     },
     {
