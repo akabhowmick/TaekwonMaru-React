@@ -18,8 +18,8 @@ export const schedule_info = {
       details: [
         "02/10 - 15 Buddy Week",
         "02/14 - Valentine's Day Special Class",
-        "",
-        ""
+        "02/17 - No Class (President's Day)",
+        "03/22 - Championship"
       ],
     },
     {
