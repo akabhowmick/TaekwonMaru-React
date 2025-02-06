@@ -6,11 +6,10 @@ export const schedule_info = {
     {
       title: "KPOP - Dance Class:",
       details: [
-        "Friday 6:45-7:45pm (01/10, 17, 24, 02/07)",
-        "Ateez - Ice on my Teeth ",
-        "Saturday 1:30pm-2:20pm (01/04, 11, 18, 25)",
-        "G-Dragon - Home Sweet Home ",
-        "Rose - APT",
+        "Friday 6:45-7:45pm (02/14, 21, 28, 03/07)",
+        "Seventeen - LOVE, MONEY, FAME ",
+        "Saturday 1:30pm-2:20pm (02/01, 08, 15, 22)",
+        "Stray Kids - Walking on Water",
       ],
     },
     {
