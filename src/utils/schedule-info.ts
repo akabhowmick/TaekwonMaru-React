@@ -6,25 +6,25 @@ export const schedule_info = {
     {
       title: "KPOP - Dance Class:",
       details: [
-        "Friday 6:35-7:50pm (3/07,14,21)",
-        "G-Dragon - Power",
-        "Saturday 1:30pm-2:35pm (3/01,08,25)",
-        "NCT Dream - When I'm with you ",
+        "Friday 6:35-7:50pm (3/28, 4/11,18,25)",
+        "Ateez - Crazy form",
+        "Saturday 1:30pm-2:35pm (3/29,4/5,12,19)",
+        "Boy Next Door - Our  ",
       ],
     },
     {
       title: currentMonth + " Events:",
       details: [
-        "03/03 - Promotion Test",
-        "03/22 - Hong Ik Championship",
+        "04/28 - Promotion Test",
+        "04/04 - JJP Performance",
+        "04/05 - Robins Lane Performance",
         "",
-        ""
       ],
     },
     {
       title: "Junior Leader Meeting:",
       details: [
-        "03/25/25 07:20pm - 07:55pm",
+        "TBD 07:20pm - 07:55pm",
         "Mandatory Monthly Meeting for Junior Leaders!",
         "",
         "",
