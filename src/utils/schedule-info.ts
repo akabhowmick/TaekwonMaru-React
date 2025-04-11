@@ -18,13 +18,13 @@ export const schedule_info = {
         "04/28 - Promotion Test",
         "04/04 - JJP Performance",
         "04/05 - Robins Lane Performance",
-        "",
+        "04/14 - 19 - Buddy Week",
       ],
     },
     {
       title: "Junior Leader Meeting:",
       details: [
-        "TBD 07:20pm - 07:55pm",
+        "04/14/25 07:20pm - 07:55pm",
         "Mandatory Monthly Meeting for Junior Leaders!",
         "",
         "",
