@@ -6,10 +6,13 @@ export const schedule_info = {
     {
       title: "KPOP - Dance Class:",
       details: [
-        "Friday 6:35-7:50pm (3/28, 4/11,18,25)",
-        "Ateez - Crazy form",
-        "Saturday 1:30pm-2:35pm (3/29,4/5,12,19)",
-        "Boy Next Door - Our  ",
+        "Friday 6:35-7:50pm (5/2, 9, 16, 30)",
+        "Mark - 82 pressin",
+        "Saturday 1:30pm-2:35pm Tik Tok challenge dance",
+        "4/26 - Jennie - Like Jennie",
+        "5/3 - Shinee - Lucifer",
+        "5/10 - J-hope - Sweet Dreams",
+        "5/17 - Review Week!",
       ],
     },
     {
