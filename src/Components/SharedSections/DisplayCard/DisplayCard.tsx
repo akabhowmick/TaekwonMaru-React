@@ -39,6 +39,9 @@ export const DisplayCard = ({
   const getImageHeight = () => {
     if (displaying === "masters") {
       setImageHeight(425);
+      if (window.innerWidth > 1800) {
+        setImageHeight(500);
+      } 
     } else {
       if (window.innerWidth > 1440) {
         setImageHeight(400);
