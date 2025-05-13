@@ -29,7 +29,7 @@ export const Schedule = () => {
 
       <div className="events">
         <h2>{schedule_info.scheduleTitle}</h2>
-        <div className="flex flex-wrap md:justify-center md:flex-nowrap gap-4 xl:gap-8">{eventContainer}</div>
+        <div className="flex flex-wrap md:justify-evenly md:flex-nowrap gap-4 xl:gap-8">{eventContainer}</div>
       </div>
     </section>
   );

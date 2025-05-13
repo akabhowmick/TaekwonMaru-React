@@ -18,7 +18,7 @@ export const schedule_info = {
     {
       title: currentMonth + " Events:",
       details: [
-        "05/26 - Memorial Day",
+        "05/26 - Memorial Day: School Closed",
         "",
         "",
         "",
