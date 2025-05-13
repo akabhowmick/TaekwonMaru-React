@@ -18,10 +18,10 @@ export const schedule_info = {
     {
       title: currentMonth + " Events:",
       details: [
-        "04/28 - Promotion Test",
-        "04/04 - JJP Performance",
-        "04/05 - Robins Lane Performance",
-        "04/14 - 19 - Buddy Week",
+        "05/26 - Memorial Day",
+        "",
+        "",
+        "",
       ],
     },
     {
