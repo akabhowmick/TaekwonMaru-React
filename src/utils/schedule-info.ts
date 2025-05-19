@@ -27,7 +27,7 @@ export const schedule_info = {
     {
       title: "Junior Leader Meeting:",
       details: [
-        "04/14/25 07:20pm - 07:55pm",
+        "05/20/25 07:20pm - 07:55pm",
         "Mandatory Monthly Meeting for Junior Leaders!",
         "",
         "",
