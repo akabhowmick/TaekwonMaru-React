@@ -6,20 +6,18 @@ export const schedule_info = {
     {
       title: "KPOP - Dance Class:",
       details: [
-        "Friday 6:35-7:50pm (5/2, 9, 16, 30)",
-        "Mark - 82 pressin",
-        "Saturday 1:30pm-2:35pm Tik Tok challenge dance",
-        "4/26 - Jennie - Like Jennie",
-        "5/3 - Shinee - Lucifer",
-        "5/10 - J-hope - Sweet Dreams",
-        "5/17 - Review Week!",
+        "Friday 6:35-7:50pm (5/30, 6/6, 13, 20)",
+        "RIIZE - Bag Bad Back ",
+        "Saturday 1:30pm-2:35pm (5/31, 6/7, 14, 21)",
+        "Seventeen - Don't Wanna Cry",
+        "Le sserafim/ Perfect night ",
       ],
     },
     {
       title: currentMonth + " Events:",
       details: [
-        "05/26 - Memorial Day: School Closed",
-        "",
+        "06/10 - Black Belt Test",
+        "06/30 - Promotion Test (Teens and Children)",
         "",
         "",
       ],
@@ -27,7 +25,7 @@ export const schedule_info = {
     {
       title: "Junior Leader Meeting:",
       details: [
-        "05/20/25 07:20pm - 07:55pm",
+        "06/24/25 07:20pm - 07:55pm",
         "Mandatory Monthly Meeting for Junior Leaders!",
         "",
         "",
