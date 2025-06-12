@@ -76,6 +76,8 @@ export const ContactForm = () => {
       return formik.values.message;
     } else if (label === "class_of_interest") {
       return formik.values.class_of_interest;
+    } else if (label === "parent_name") {
+      return formik.values.parent_name;
     }
     return "";
   };
