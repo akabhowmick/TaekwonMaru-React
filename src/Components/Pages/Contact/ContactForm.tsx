@@ -17,7 +17,8 @@ const classOptions = [
 ];
 
 const contactFormInput = [
-  { name: "Name", label: "from_name" },
+  { name: "Student's Name", label: "student_name" },
+  { name: "Parent's Name (if student younger than 18)", label: "parent_name" },
   { name: "Email", label: "reply_to" },
   { name: "Phone Number", label: "phone_number" },
   { name: "Message", label: "message" },
@@ -29,14 +30,15 @@ export const ContactForm = () => {
 
   const formik = useFormik({
     initialValues: {
-      from_name: "", //user name
+      student_name: "", //student name
+      parent_name: "", //parent name
       phone_number: "", // phoneNumber of user
       reply_to: "", // user email
       message: "", // message of email
       class_of_interest: classOptions[0], //class that user wants to ask about
     },
     validationSchema: Yup.object({
-      from_name: Yup.string().required("* Name field is required"),
+      student_name: Yup.string().required("* Name field is required"),
       phone_number: Yup.string()
         .required("* Phone Number is required")
         .matches(/[0-9]{10}/, "Enter your 10 digit phone number with no spaces")
@@ -64,8 +66,8 @@ export const ContactForm = () => {
 
   // allows the input to have access to correct formik values
   const getFormikValues = (label: string) => {
-    if (label === "from_name") {
-      return formik.values.from_name;
+    if (label === "student_name") {
+      return formik.values.student_name;
     } else if (label === "reply_to") {
       return formik.values.reply_to;
     } else if (label === "phone_number") {
@@ -80,8 +82,8 @@ export const ContactForm = () => {
 
   // allows access to the error message in formik
   const getFormikErrors = (label: string) => {
-    if (label === "from_name") {
-      return formik.errors.from_name;
+    if (label === "student_name") {
+      return formik.errors.student_name;
     } else if (label === "reply_to") {
       return formik.errors.reply_to;
     } else if (label === "phone_number") {
@@ -104,7 +106,7 @@ export const ContactForm = () => {
           name={label}
           type="text"
           autoComplete="off"
-          placeholder={`Your ${name}`}
+          placeholder={`${name}`}
           onChange={formik.handleChange}
           value={getFormikValues(label)}
         />
