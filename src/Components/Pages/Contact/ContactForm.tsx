@@ -58,7 +58,7 @@ export const ContactForm = () => {
         // FormSubmit.co special fields
         formData.append("_subject", `New Contact Form Submission from ${values.student_name}`);
         formData.append("_template", "table"); 
-        formData.append("_captcha", "true"); 
+        formData.append("_captcha", "false"); 
 
         // Form data
         formData.append("Student Name", values.student_name);
