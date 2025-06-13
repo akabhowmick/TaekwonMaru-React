@@ -1,11 +1,6 @@
 import { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import emailjs from "@emailjs/browser";
-
-const serviceId = "service_x1v468p";
-const templateId = "template_8przsfw";
-const publicKey = "aI0R8QkNkegFHRxBK";
 
 const classOptions = [
   "Little Tiger (2-5)",
@@ -17,25 +12,25 @@ const classOptions = [
 ];
 
 const contactFormInput = [
-  { name: "Student's Name", label: "student_name" },
-  { name: "Parent's Name (if student younger than 18)", label: "parent_name" },
-  { name: "Email", label: "reply_to" },
-  { name: "Phone Number", label: "phone_number" },
-  { name: "Message", label: "message" },
+  { name: "STUDENT'S NAME", label: "student_name" },
+  { name: "PARENT'S NAME (IF STUDENT YOUNGER THAN 18)", label: "parent_name" },
+  { name: "EMAIL", label: "email" },
+  { name: "PHONE NUMBER", label: "phone_number" },
+  { name: "MESSAGE", label: "message" },
 ];
-
 
 export const ContactForm = () => {
   const [buttonState, setButtonState] = useState("Send Message");
+  const [submitStatus, setSubmitStatus] = useState("");
 
   const formik = useFormik({
     initialValues: {
-      student_name: "", //student name
-      parent_name: "", //parent name
-      phone_number: "", // phoneNumber of user
-      reply_to: "", // user email
-      message: "", // message of email
-      class_of_interest: classOptions[0], //class that user wants to ask about
+      student_name: "",
+      parent_name: "",
+      phone_number: "",
+      email: "",
+      message: "",
+      class_of_interest: classOptions[0],
     },
     validationSchema: Yup.object({
       student_name: Yup.string().required("* Name field is required"),
@@ -43,118 +38,186 @@ export const ContactForm = () => {
         .required("* Phone Number is required")
         .matches(/[0-9]{10}/, "Enter your 10 digit phone number with no spaces")
         .max(10, "Only enter 10 digits"),
-      reply_to: Yup.string().email("Invalid email address").required("* Email field is required"),
+      email: Yup.string().email("Invalid email address").required("* Email field is required"),
       message: Yup.string().required("* Message field is required"),
       class_of_interest: Yup.string().required(
-        "* Picking a class wil help us give you the most relevant information"
+        "* Picking a class will help us give you the most relevant information"
       ),
     }),
-    onSubmit: (values, { setSubmitting, resetForm }) => {
-      setButtonState("Sending Email");
+    onSubmit: async (values, { setSubmitting, resetForm }) => {
+      setButtonState("Sending...");
+      setSubmitStatus("");
+
       try {
-        emailjs.send(serviceId, templateId, values, publicKey).then(() => {
-          setButtonState("Send Email");
-          setSubmitting(false);
-          resetForm();
+        // Create FormData object for FormSubmit.co
+        const formData = new FormData();
+
+        // Add your email address here - REPLACE WITH YOUR EMAIL
+        formData.append("_to", "usataekwonmaru@gmail.com");
+
+        // FormSubmit.co special fields
+        formData.append("_subject", `New Contact Form Submission from ${values.student_name}`);
+        formData.append("_template", "table"); 
+        formData.append("_captcha", "true"); 
+
+        // Form data
+        formData.append("Student Name", values.student_name);
+        formData.append("Parent Name", values.parent_name || "Not provided");
+        formData.append("Email", values.email);
+        formData.append("Phone Number", values.phone_number);
+        formData.append("Class of Interest", values.class_of_interest);
+        formData.append("Message", values.message);
+
+        const response = await fetch("https://formsubmit.co/usataekwonmaru@gmail.com", {
+          method: "POST",
+          body: formData,
         });
-      } catch {
-        setButtonState("Send Email");
+
+        if (response.ok) {
+          setButtonState("Message Sent!");
+          setSubmitStatus("success");
+          resetForm();
+          // Reset button text after 3 seconds
+          setTimeout(() => {
+            setButtonState("Send Message");
+            setSubmitStatus("");
+          }, 3000);
+        } else {
+          throw new Error("Failed to send message");
+        }
+      } catch (error) {
+        console.error("Error:", error);
+        setButtonState("Failed to Send");
+        setSubmitStatus("error");
+        // Reset button text after 3 seconds
+        setTimeout(() => {
+          setButtonState("Send Message");
+          setSubmitStatus("");
+        }, 3000);
+      } finally {
         setSubmitting(false);
       }
     },
   });
 
-  // allows the input to have access to correct formik values
+  // Helper functions
   const getFormikValues = (label: string) => {
-    if (label === "student_name") {
-      return formik.values.student_name;
-    } else if (label === "reply_to") {
-      return formik.values.reply_to;
-    } else if (label === "phone_number") {
-      return formik.values.phone_number;
-    } else if (label === "message") {
-      return formik.values.message;
-    } else if (label === "class_of_interest") {
-      return formik.values.class_of_interest;
-    } else if (label === "parent_name") {
-      return formik.values.parent_name;
+    switch (label) {
+      case "student_name":
+        return formik.values.student_name;
+      case "email":
+        return formik.values.email;
+      case "phone_number":
+        return formik.values.phone_number;
+      case "message":
+        return formik.values.message;
+      case "class_of_interest":
+        return formik.values.class_of_interest;
+      case "parent_name":
+        return formik.values.parent_name;
+      default:
+        return "";
     }
-    return "";
   };
 
-  // allows access to the error message in formik
   const getFormikErrors = (label: string) => {
-    if (label === "student_name") {
-      return formik.errors.student_name;
-    } else if (label === "reply_to") {
-      return formik.errors.reply_to;
-    } else if (label === "phone_number") {
-      return formik.errors.phone_number;
-    } else if (label === "message") {
-      return formik.errors.message;
-    } else if (label === "class_of_interest") {
-      return formik.errors.class_of_interest;
+    switch (label) {
+      case "student_name":
+        return formik.errors.student_name;
+      case "email":
+        return formik.errors.email;
+      case "phone_number":
+        return formik.errors.phone_number;
+      case "message":
+        return formik.errors.message;
+      case "class_of_interest":
+        return formik.errors.class_of_interest;
+      default:
+        return "";
     }
-    return "";
   };
-
-  const contactFormInputs = contactFormInput.map(({ name, label }) => {
-    return (
-      <div key={name} className="contact-form-div">
-        <label htmlFor={label}>{name}</label>
-        <input
-          className="contact-form-input"
-          id={label}
-          name={label}
-          type="text"
-          autoComplete="off"
-          placeholder={`${name}`}
-          onChange={formik.handleChange}
-          value={getFormikValues(label)}
-        />
-        {formik.submitCount > 0 && getFormikErrors(label) && (
-          <div className="expandable show">{getFormikErrors(label)}</div>
-        )}
-      </div>
-    );
-  });
-
-  const selectClasses = (
-    <div className="contact-form-div">
-      <label htmlFor="class_of_interest">Class Of Interest</label>
-      <select
-        className="contact-form-input"
-        id="class_of_interest"
-        name="class_of_interest"
-        onChange={formik.handleChange}
-        value={getFormikValues("class_of_interest")}
-      >
-        {classOptions.map((className) => {
-          return <option key={className} value={className} label={className}></option>;
-        })}
-      </select>
-      {formik.submitCount > 0 && getFormikErrors("class_of_interest") && (
-        <div className="expandable show">{getFormikErrors("class_of_interest")}</div>
-      )}
-    </div>
-  );
 
   return (
-    <form className="formcontact" onSubmit={formik.handleSubmit}>
-      <div className="form-row-1">
-        {contactFormInputs}
-        {selectClasses}
-        <div className="col-12">
+    <div className="form-container">
+      <form onSubmit={formik.handleSubmit}>
+        {/* Status message */}
+        {submitStatus === "success" && (
+          <div className="status-message success">Message sent successfully!</div>
+        )}
+        {submitStatus === "error" && (
+          <div className="status-message error">Failed to send message. Please try again.</div>
+        )}
+
+        <table className="form-table">
+          <tbody>
+            {contactFormInput.map(({ name, label }) => (
+              <tr key={label}>
+                <th>{name}</th>
+                <td>
+                  {label === "message" ? (
+                    <textarea
+                      className="contact-form-textarea"
+                      id={label}
+                      name={label}
+                      placeholder={`Enter ${name.toLowerCase()}`}
+                      onChange={formik.handleChange}
+                      value={getFormikValues(label)}
+                    />
+                  ) : (
+                    <input
+                      className="contact-form-input"
+                      id={label}
+                      name={label}
+                      type={label === "email" ? "email" : "text"}
+                      autoComplete="off"
+                      placeholder={`Enter ${name.toLowerCase()}`}
+                      onChange={formik.handleChange}
+                      value={getFormikValues(label)}
+                    />
+                  )}
+                  {formik.submitCount > 0 && getFormikErrors(label) && (
+                    <div className="error-message">{getFormikErrors(label)}</div>
+                  )}
+                </td>
+              </tr>
+            ))}
+
+            <tr>
+              <th>CLASS OF INTEREST</th>
+              <td>
+                <select
+                  className="contact-form-select"
+                  id="class_of_interest"
+                  name="class_of_interest"
+                  onChange={formik.handleChange}
+                  value={getFormikValues("class_of_interest")}
+                >
+                  {classOptions.map((className) => (
+                    <option key={className} value={className}>
+                      {className}
+                    </option>
+                  ))}
+                </select>
+                {formik.submitCount > 0 && getFormikErrors("class_of_interest") && (
+                  <div className="error-message">{getFormikErrors("class_of_interest")}</div>
+                )}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div className="button-container">
           <button
-            id="contact-submit-btn"
             disabled={formik.isSubmitting}
             type="submit"
-            className="btn btn-primary"
+            className={`submit-button ${submitStatus === "success" ? "success" : ""} ${
+              submitStatus === "error" ? "error" : ""
+            }`}
           >
-            <span>{buttonState}</span>
+            {buttonState}
           </button>
         </div>
-      </div>
-    </form>
+      </form>
+    </div>
   );
 };
