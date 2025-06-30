@@ -4,7 +4,7 @@ import promoImage from "../assets/Promo/summer_2024_promo.jpg";
 // import promoImage from "../assets/Promo/new year promo.jpg";
 import homePageImage from "../assets/home-page.png";
 import schoolIcon from "../assets/tkd-logo.png";
-import schedule from "../assets/Schedule/fall-2025.png";
+import schedule from "../assets/Schedule/summer-2025.png";
 import demoImage from "../assets/demo3.png"; 
 
 export const homeImage = homePageImage;
