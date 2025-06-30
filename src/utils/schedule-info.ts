@@ -6,18 +6,18 @@ export const schedule_info = {
     {
       title: "KPOP - Dance Class:",
       details: [
-        "Friday 6:35-7:50pm (5/30, 6/6, 13, 20)",
-        "RIIZE - Bag Bad Back ",
-        "Saturday 1:30pm-2:35pm (5/31, 6/7, 14, 21)",
-        "Seventeen - Don't Wanna Cry",
-        "Le sserafim/ Perfect night ",
+        "Friday 6:35-7:50pm (6/27, 7/11, 18, 25)",
+        "Street Man - Woman fighter Special",
+        "Each week new dance - Echo, Hey mama, New things, Smoke", 
+        "Saturday 1:30pm-2:20pm (6/28, 7/12, 19, 26)",
+        "P1harmony - DUH!"
       ],
     },
     {
       title: currentMonth + " Events:",
       details: [
-        "06/10 - Black Belt Test",
-        "06/30 - Promotion Test (Teens and Children)",
+        "07/04 - No class (Independence Day)",
+        "07/01 - 05: Buddy Week",
         "",
         "",
       ],
@@ -25,10 +25,10 @@ export const schedule_info = {
     {
       title: "Junior Leader Meeting:",
       details: [
-        "06/24/25 07:20pm - 07:55pm",
+        "07/11/25 05:45 P.M. - 06:15 P.M.",
+        "07/18/25 05:45 P.M. - 06:15 P.M.",
+        "07/25/25 05:45 P.M. - 06:15 P.M.",
         "Mandatory Monthly Meeting for Junior Leaders!",
-        "",
-        "",
         "",
       ],
     },
