@@ -1,11 +1,12 @@
 import { HomeCardInfo } from "../types/interfaces";
 import trialImage from "../assets/children-home.png";
 import promoImage from "../assets/Promo/summer_2024_promo.jpg";
+import kpopPriceImage from "../assets/Promo/kpopPricing.png";
 // import promoImage from "../assets/Promo/new year promo.jpg";
 import homePageImage from "../assets/home-page.png";
 import schoolIcon from "../assets/tkd-logo.png";
 import schedule from "../assets/Schedule/summer-2025.png";
-import demoImage from "../assets/demo3.png"; 
+import demoImage from "../assets/demo3.png";
 
 export const homeImage = homePageImage;
 export const taekwonMaruLogo = schoolIcon;
@@ -19,21 +20,21 @@ const trialClassInfo: HomeCardInfo = {
 };
 
 // Summer Promo
-// const promoInfo: HomeCardInfo = {
-//   title: "$199 - SUMMER PROMOTION!",
-//   src: promoImage,
-//   description:
-//     "$199 for 6 weeks, 2 classes/week as a easy to start promotional package for all new students! This offer includes a t-shirt and TaekwonMaru shorts!!",
-//   type: "image",
-// };
-
 const promoInfo: HomeCardInfo = {
-  title: "$29 - PROMOTION!",
+  title: "$199 - SUMMER PROMOTION!",
   src: promoImage,
   description:
-    "$29 for 2 weeks, 2 classes/week as a easy to start promotional package for all new students!",
+    "$199 for 6 weeks, 2 classes per week! This offer includes a t-shirt and TaekwonMaru shorts!!",
   type: "image",
 };
+
+// const promoInfo: HomeCardInfo = {
+//   title: "$29 - PROMOTION!",
+//   src: promoImage,
+//   description:
+//     "$29 for 2 weeks, 2 classes/week as a easy to start promotional package for all new students!",
+//   type: "image",
+// };
 
 export const HomeCardImageBoxes: HomeCardInfo[] = [trialClassInfo, promoInfo];
 
@@ -61,10 +62,10 @@ const kpopTrial: HomeCardInfo = {
 };
 
 const kpopMonthly: HomeCardInfo = {
-  title: "$80 - MONTHLY CLASS",
-  src: "https://www.youtube.com/embed/RfVxg0ij3rc?si=o5JFkR56VELz3-MX",
-  description: "Learn one full choreography in 4 weeks!",
-  type: "video",
+  title: "K-Pop Pricing",
+  src: kpopPriceImage,
+  description: "View our full pricing structure",
+  type: "image",
 };
 
 export const HomeCardKPOPVideoBoxes: HomeCardInfo[] = [kpopTrial, kpopMonthly];
