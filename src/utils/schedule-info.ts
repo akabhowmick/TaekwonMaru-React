@@ -6,28 +6,28 @@ export const schedule_info = {
     {
       title: "KPOP - Dance Class:",
       details: [
-        "Friday 6:35-7:50pm (6/27, 7/11, 18, 25)",
-        "Street Man - Woman fighter Special",
-        "Each week new dance - Echo, Hey mama, New things, Smoke", 
-        "Saturday 1:30pm-2:20pm (6/28, 7/12, 19, 26)",
-        "P1harmony - DUH!"
+        "Friday 6:15-7:15pm (8/1 ~ 8/22)",
+        "All day project - Wicked",
+        "Saturday 1:30pm-2:20pm (8/2 ~ 8/23)",
+        "Enhypen - Bad desire"
       ],
     },
     {
       title: currentMonth + " Events:",
       details: [
-        "07/04 - No class (Independence Day)",
-        "07/01 - 05: Buddy Week",
-        "",
-        "",
+        "08/13 - Family Class!",
+        "08/19 - Summer Party",
+        "08/27 - Promotion Test",
+        "08/18 - 30: Buddy Week",
       ],
     },
     {
       title: "Junior Leader Meeting:",
       details: [
-        "07/11/25 05:45 P.M. - 06:15 P.M.",
-        "07/18/25 05:45 P.M. - 06:15 P.M.",
-        "07/25/25 05:45 P.M. - 06:15 P.M.",
+        "08/08/25 05:45 P.M. - 06:15 P.M.",
+        "08/15/25 05:45 P.M. - 06:15 P.M.",
+        "08/22/25 05:45 P.M. - 06:15 P.M.",
+        "08/29/25 05:45 P.M. - 06:15 P.M.",
         "Mandatory Monthly Meeting for Junior Leaders!",
         "",
       ],
