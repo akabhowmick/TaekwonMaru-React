@@ -6,29 +6,27 @@ export const schedule_info = {
     {
       title: "KPOP - Dance Class:",
       details: [
-        "Friday 6:15-7:15pm (8/1 ~ 8/22)",
-        "All day project - Wicked",
-        "Saturday 1:30pm-2:20pm (8/2 ~ 8/23)",
-        "Enhypen - Bad desire"
+        "Friday 6:45 - 7:45pm (8/29 ~ 9/19)",
+        "Cortis - Go!",
+        "Saturday 1:30pm - 2:20pm (8/30 ~ 9/20)",
+        "Cortis - What you want "
       ],
     },
     {
       title: currentMonth + " Events:",
       details: [
-        "08/13 - Family Class!",
-        "08/19 - Summer Party",
-        "08/27 - Promotion Test",
-        "08/18 - 30: Buddy Week",
+        "09/02 - 07: Buddy Week",
+        "09/11 - Long Islands Duck Performance",
+        "",
+        "",
       ],
     },
     {
       title: "Junior Leader Meeting:",
       details: [
-        "08/08/25 05:45 P.M. - 06:15 P.M.",
-        "08/15/25 05:45 P.M. - 06:15 P.M.",
-        "08/22/25 05:45 P.M. - 06:15 P.M.",
-        "08/29/25 05:45 P.M. - 06:15 P.M.",
+        "TBD",
         "Mandatory Monthly Meeting for Junior Leaders!",
+        "",
         "",
       ],
     },
