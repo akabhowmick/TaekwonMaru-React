@@ -23,7 +23,7 @@ export const HomeCardBox = ({ cardInfo }: { cardInfo: HomeCardInfo }) => {
   return (
     <div className="p-4 flex flex-col h-full">
       {mediaToDisplay}
-      <div className="p-6 flex flex-col flex-grow justify-between">
+      <div className="flex flex-col flex-grow justify-between">
         <div>
           <h3 className="subheader text-2xl font-bold mb-3">{title}</h3>
           <div className="description mb-4">{description}</div>

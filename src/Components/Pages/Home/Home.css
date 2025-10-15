@@ -16,7 +16,7 @@
 }
 
 .header-large::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -10px;
   left: 50%;
@@ -50,7 +50,8 @@
   padding: 0;
   border-radius: 16px;
   border: none;
-  min-width: 400px;
+  min-width: 0;
+  width: 100%;
   background: linear-gradient(135deg, #fff 0%, #f8f8f8 100%);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -59,7 +60,7 @@
 }
 
 .card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -116,7 +117,7 @@ iframe {
 }
 
 .card .btn-primary {
-  width: 75%;
+  width: 85%;
   margin: 1rem auto;
   text-align: center;
   border-radius: 50rem;
@@ -131,7 +132,7 @@ iframe {
 }
 
 .card .btn-primary::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -238,7 +239,6 @@ iframe {
 
 @media only screen and (max-width: 56.25em) {
   .main-page-sections {
-    display: block;
     margin: 0;
     gap: 1.5rem;
   }
@@ -256,25 +256,26 @@ iframe {
     height: fit-content;
     padding-top: 5rem;
   }
-  
+
   .card {
     min-width: 300px;
     padding: 0;
   }
-  
+
   iframe {
     min-height: 300px;
   }
-  
+
   .header-large h3 {
     font-size: 2.5rem;
   }
-  
+
   .description {
     font-size: 1.15rem;
   }
 
   .main-page-sections {
     padding: 1rem;
+    gap: 1rem;
   }
 }
