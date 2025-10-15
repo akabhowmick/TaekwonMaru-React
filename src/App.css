@@ -11,10 +11,10 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
-  --background: #dcdcdc;
+  --background: #ffeeee;
   --dark-red: #660708;
   --bright-red: #ff2428;
-  --light-red: #f6d9d9;
+  --light-red: #f9eded;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -149,4 +149,11 @@ button:not(:disabled):not(.disabled) {
     justify-content: center;
     flex-direction: column-reverse;
   }
+}
+
+
+.section-title {
+  padding: 3rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
 }
