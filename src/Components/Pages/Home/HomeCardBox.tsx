@@ -25,8 +25,8 @@ export const HomeCardBox = ({ cardInfo }: { cardInfo: HomeCardInfo }) => {
       {mediaToDisplay}
       <div className="flex flex-col flex-grow justify-between">
         <div>
-          <h3 className="subheader text-2xl font-bold mb-3">{title}</h3>
-          <div className="description mb-4">{description}</div>
+          <h3 className="subheader sm:text-2xl md:text-4xl font-bold mb-3">{title}</h3>
+          <div className="description mb-4 sm:text-xl md:text-2xl">{description}</div>
         </div>
         <a href="/contact" className="btn-primary no-underline inline-block mt-auto">
           Book a Class

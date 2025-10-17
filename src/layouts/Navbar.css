@@ -58,7 +58,7 @@
 
 @media only screen and (max-width: 37.5em) {
   #logo-with-title h2 {
-    font-size: 1.25;
+    font-size: 1.25rem;
   }
   .main-regular-links {
     display: none;

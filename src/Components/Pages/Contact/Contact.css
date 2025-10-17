@@ -540,9 +540,6 @@
   }
 }
 
-/* =============================================
-   ACCESSIBILITY & TOUCH IMPROVEMENTS
-   ============================================= */
 @media (hover: none) and (pointer: coarse) {
   /* Touch devices */
   .contact-form-input,
