@@ -44,7 +44,7 @@ function App() {
             color="var(--dark-red)"
             ariaLabel="tail-spin-loading"
           />
-          <h2 className="bounce-in-top text-2xl">Loading TaekwonMaru...</h2>
+          <h2 className="mr-3 bounce-in-top text-2xl xl:text-3xl">Loading TaekwonMaru...</h2>
         </div>
       ) : (
         <>
