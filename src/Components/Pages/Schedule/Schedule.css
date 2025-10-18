@@ -54,8 +54,8 @@
   display: flex;
   justify-content: center;
   animation: fadeInScale 1s ease-out;
-  padding: 0 1rem;
-  max-width: 100%;
+  padding: 1rem;
+  max-width: 90%;
 }
 
 .schedule-image {
@@ -219,10 +219,6 @@
     min-width: 0;
   }
 
-  .schedule-section {
-    padding: 0 2rem;
-  }
-
   .events {
     padding: 2rem 2rem;
   }
@@ -256,7 +252,7 @@
 
   .schedule-section {
     margin: 2rem auto;
-    padding: 0 0.5rem;
+    padding: 0 0.75rem;
   }
 
   .events {
@@ -286,11 +282,6 @@
 @media screen and (max-width: 480px) {
   #schedule {
     padding: 1.5rem 0;
-  }
-
-  .schedule-section {
-    margin: 1.5rem auto;
-    padding: 0 0.25rem;
   }
 
   .schedule-image {
