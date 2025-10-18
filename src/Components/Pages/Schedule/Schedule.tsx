@@ -20,7 +20,7 @@ export const Schedule = () => {
               <hr className="event-divider" />
               <div className="event-details">
                 {event.details.map((detail, index) => (
-                  <p key={index} className={`event-detail text-xl ${detail.length > 0 ? "" : "lies"}`}>
+                  <p key={index} className={`event-detail text-xl font-semibold ${detail.length > 0 ? "" : "lies"}`}>
                     {detail}
                   </p>
                 ))}
