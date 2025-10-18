@@ -9,7 +9,7 @@
 
 .main-navbar-ul a {
   text-decoration: none;
-  padding: 0.15rem 1rem;
+  padding: 0.15rem 0.5rem;
 }
 
 .main-navbar-ul a li {
@@ -17,7 +17,7 @@
   font-size: 1.4rem;
   position: relative;
   list-style: none;
-  font-weight: 800;
+  font-weight: 600;
   padding: 0.75rem;
   border-radius: 5px;
 }
@@ -41,7 +41,7 @@
 #logo-with-title h2 {
   color: var(--dark-red);
   margin-left: 0.5rem;
-  font-weight:700;
+  font-weight: 700;
 }
 
 .menu-icon {
