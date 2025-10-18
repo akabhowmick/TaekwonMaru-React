@@ -5,11 +5,6 @@
 .portfolio-grid {
   width: 100%;
   margin: 0 auto;
-}
-
-.portfolio-grid {
-  display: flex;
-  flex-wrap: wrap;
   padding: 3rem 1rem;
   justify-content: center;
   gap: 1rem;
@@ -57,10 +52,10 @@
   .portfolio-card {
     width: 450px;
   }
-  .portfolio-card .MuiTypography-h5{
+  .portfolio-card .MuiTypography-h5 {
     font-size: 1.75rem;
   }
-  .portfolio-card .MuiTypography-body1{
+  .portfolio-card .MuiTypography-body1 {
     font-size: 1.25rem;
   }
 }
