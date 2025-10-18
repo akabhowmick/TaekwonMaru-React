@@ -45,7 +45,7 @@ export const RootLayout = () => {
             aria-label="Larger viewport navigation menu with links"
             className="main-navbar-ul"
           >
-            <ul className="main-regular-links">{linksWithNavLink}</ul>
+            <ul className="main-regular-links ">{linksWithNavLink}</ul>
             <div className="menu-icon" onClick={handleShowNavbar}>
               <MenuIcon />
             </div>
@@ -68,7 +68,7 @@ export const RootLayout = () => {
               }
             >
               <img className="navbar-logo" src={taekwonMaruLogo} alt="tkd-main-logo" />
-              <h2 className="text-xl md:text-2xl lg:text-3xl">TaekwonMaru</h2>
+              <h2 className="text-xl md:text-2xl lg:text-3xl 2xl:text-4xl 3xl:text-5xl">TaekwonMaru</h2>
             </NavLink>
           </NavUnlisted>
           <CircleIndicator />
