@@ -68,7 +68,7 @@ export const RootLayout = () => {
               }
             >
               <img className="navbar-logo" src={taekwonMaruLogo} alt="tkd-main-logo" />
-              <h2 className="text-xl">TaekwonMaru</h2>
+              <h2 className="text-xl md:text-2xl lg:text-3xl">TaekwonMaru</h2>
             </NavLink>
           </NavUnlisted>
           <CircleIndicator />
