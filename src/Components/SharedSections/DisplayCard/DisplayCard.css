@@ -54,9 +54,7 @@
   }
   .portfolio-card .MuiTypography-h5 {
     font-size: 1.75rem;
-  }
-  .portfolio-card .MuiTypography-body1 {
-    font-size: 1.25rem;
+    font-weight: 600;
   }
 }
 

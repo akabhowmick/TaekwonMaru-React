@@ -5,7 +5,6 @@ import CardHeader from "@mui/material/CardHeader";
 import CardContent from "@mui/material/CardContent";
 import Collapse from "@mui/material/Collapse";
 import IconButton, { IconButtonProps } from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { ClassInfo, MasterInfo } from "../../../types/interfaces";
 import "./DisplayCard.css";
@@ -64,7 +63,6 @@ export const DisplayCard = ({
   const [imageHeight, setImageHeight] = React.useState(0);
 
   // const imageHeight = displaying === "masters" ? 425 : 263;
-  const subheader = displaying === "masters" ? "TaekwonMaru Staff" : "Taekwonmaru Programs";
   const cardDetails = displaying === "masters" ? "Staff Experience: " : "Class Description:";
 
   const handleExpandClick = () => {
@@ -81,10 +79,10 @@ export const DisplayCard = ({
         },
       }}
     >
-      <CardHeader className="card-header" title={title} subheader={subheader} />
+      <CardHeader className="card-header" title={title} />
       <LazyLoadingImage height={imageHeight} src={image} alt="class-image" id="card-image" />
       <CardContent className="card-content-div">
-        <Typography variant="body1">{subtitle}</Typography>
+        <h3 className="text-2xl">{subtitle}</h3>
         <ExpandMore
           id="expand-btn"
           expand={expanded}
@@ -97,11 +95,11 @@ export const DisplayCard = ({
       </CardContent>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>{cardDetails}</Typography>
+          <h4 className="text-2xl pb-2">{cardDetails}</h4>
           {details.map((sentence, index) => {
             return (
               <div key={index}>
-                <Typography paragraph>{sentence}</Typography>
+                <p className="text-2xl font-medium">{sentence}</p>
               </div>
             );
           })}
