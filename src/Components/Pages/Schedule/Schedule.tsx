@@ -16,11 +16,16 @@ export const Schedule = () => {
         <div className="events-container">
           {schedule_info.eventsInfo.map((event) => (
             <div key={event.title} className="event-card">
-              <h3 className="event-title text-2xl">{event.title}</h3>
+              <h3 className="event-title text-2xl 3xl:text-4xl">{event.title}</h3>
               <hr className="event-divider" />
               <div className="event-details">
                 {event.details.map((detail, index) => (
-                  <p key={index} className={`event-detail text-xl font-semibold ${detail.length > 0 ? "" : "lies"}`}>
+                  <p
+                    key={index}
+                    className={`event-detail text-xl 3xl:text-3xl font-semibold ${
+                      detail.length > 0 ? "" : "lies"
+                    }`}
+                  >
                     {detail}
                   </p>
                 ))}

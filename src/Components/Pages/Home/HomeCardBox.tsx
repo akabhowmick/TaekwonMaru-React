@@ -28,7 +28,10 @@ export const HomeCardBox = ({ cardInfo }: { cardInfo: HomeCardInfo }) => {
           <h3 className="subheader sm:text-2xl md:text-4xl 2xl:text-5xl font-bold mb-2">{title}</h3>
           <div className="description sm:text-xl md:text-2xl 2xl:text-3xl mb-3">{description}</div>
         </div>
-        <a href="/contact" className="btn-primary no-underline inline-block mt-auto">
+        <a
+          href="/contact"
+          className="btn-primary no-underline inline-block mt-auto sm:text-xl md:text-2xl 2xl:text-4xl"
+        >
           Book a Class
         </a>
       </div>
