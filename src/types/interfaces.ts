@@ -23,3 +23,21 @@ export interface HomePageSections {
   sectionTitle: string;
   media: HomeCardInfo[];
 }
+
+export interface OpeningHour {
+  days: string;
+  hours: string;
+}
+
+export interface ContactInfo {
+  icon: string;
+  href: string;
+  text: string;
+  ariaLabel?: string;
+}
+
+export interface SocialLink {
+  href: string;
+  icon: JSX.Element;
+  ariaLabel: string;
+}
