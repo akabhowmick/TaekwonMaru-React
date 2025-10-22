@@ -37,15 +37,20 @@ export const DisplayCard = ({
 
   const getImageHeight = () => {
     if (displaying === "masters") {
-      setImageHeight(425);
+      if (window.innerWidth > 1800) {
+        setImageHeight(600);
+      } else if (window.innerWidth > 1400) {
+        setImageHeight(520);
+      } else {
+        setImageHeight(425);
+      }
+    } else {
       if (window.innerWidth > 1800) {
         setImageHeight(500);
-      } 
-    } else {
-      if (window.innerWidth > 1440) {
+      } else if (window.innerWidth > 1400) {
         setImageHeight(400);
       } else {
-        setImageHeight(263);
+        setImageHeight(463);
       }
     }
   };
@@ -79,7 +84,7 @@ export const DisplayCard = ({
         },
       }}
     >
-      <CardHeader className="card-header" title={title} />
+      <CardHeader className="card-header text-2xl xl:text-3xl" title={title} />
       <LazyLoadingImage height={imageHeight} src={image} alt="class-image" id="card-image" />
       <CardContent className="card-content-div">
         <h3 className="text-2xl">{subtitle}</h3>
@@ -95,11 +100,11 @@ export const DisplayCard = ({
       </CardContent>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <h4 className="text-2xl pb-2">{cardDetails}</h4>
+          <h4 className="text-3xl pb-2">{cardDetails}</h4>
           {details.map((sentence, index) => {
             return (
               <div key={index}>
-                <p className="text-2xl font-medium">{sentence}</p>
+                <p className="text-xl 2xl:text-2xl font-medium py-2">{sentence}</p>
               </div>
             );
           })}
