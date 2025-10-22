@@ -4,9 +4,12 @@ footer {
   text-align: center;
 }
 
+.footer-section{
+  margin: 0 auto;
+}
+
 footer p {
   margin: 10px 10px 30px;
-  font-size: 1.25rem;
 }
 
 footer hr {
@@ -25,7 +28,6 @@ table td {
   padding: 0.75rem;
   vertical-align: top;
   border-top: 1px solid #dee2e6;
-  font-size: 1.25rem;
 }
 
 .main-footer-div {

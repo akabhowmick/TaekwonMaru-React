@@ -8,7 +8,7 @@ export const Footer = () => {
       <div className="p-4 pb-0">
         <div className="main-footer-div">
           <FooterSection title="OPENING HOURS:">
-            <table>
+            <table className="xl:text-2xl">
               <tbody>
                 {OPENING_HOURS.map(({ days, hours }) => (
                   <tr key={days}>
@@ -24,7 +24,7 @@ export const Footer = () => {
 
           <FooterSection title="Contact">
             {CONTACT_INFO.map(({ icon, href, text }) => (
-              <p key={text} className="text-white">
+              <p key={text} className="text-white xl:text-2xl">
                 <i className={`text-white ${icon}`}></i>
                 <a className="footer-text" href={href}>
                   {text}
@@ -37,7 +37,7 @@ export const Footer = () => {
 
           <div className="social-follow-div">
             <FooterSection title="TaekwonMaru">
-              <p className="text-white">
+              <p className="text-white xl:text-2xl">
                 We hope to hear from you soon! <br />
                 You can also follow us!
               </p>
@@ -60,7 +60,7 @@ export const Footer = () => {
           </div>
         </div>
         <hr className="bottom-line" />
-        <div className="footer-credits">
+        <div className="footer-credits xl:text-2xl">
           Made by <a href="https://akashbhowmick.com/">AKA CODE</a>
         </div>
       </div>
