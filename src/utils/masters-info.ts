@@ -3,9 +3,9 @@ import { MasterInfo } from "../types/interfaces";
 import ABPicture from "../assets/Masters/ab.jpg";
 import MCPicture from "../assets/Masters/mc.jpg";
 import MRPicture from "../assets/Masters/mr.jpg";
-import OSPicture from "../assets/Masters/os.jpg";
-import AMPicture from "../assets/Masters/am.png";
-import AJPicture from "../assets/Masters/aj.jpg";
+// import OSPicture from "../assets/Masters/os.jpg";
+// import AMPicture from "../assets/Masters/am.png";
+// import AJPicture from "../assets/Masters/aj.jpg";
 
 const ab: MasterInfo = {
   title: "Master Akash",
@@ -62,50 +62,50 @@ const mr: MasterInfo = {
   ],
 };
 
-const os: MasterInfo = {
-  title: "Master Owen",
-  subtitle: "Master Owen Shin",
-  image: OSPicture,
-  details: [
-    "Taekwondo 4th Degree Black Belt",
-    "Black Hawk Demo Team Leader 2021, 2023, 2024",
-    "St John's University major in Radiology",
-    "2018-2021, 2024 NYS 1st Place Governor’s Cup Demo Team",
-    "2016-2018 President Award Scholarship Recipient",
-    "NYS Sparring, Form and Board Breaking Gold Medal",
-  ],
-};
+// const os: MasterInfo = {
+//   title: "Master Owen",
+//   subtitle: "Master Owen Shin",
+//   image: OSPicture,
+//   details: [
+//     "Taekwondo 4th Degree Black Belt",
+//     "Black Hawk Demo Team Leader 2021, 2023, 2024",
+//     "St John's University major in Radiology",
+//     "2018-2021, 2024 NYS 1st Place Governor’s Cup Demo Team",
+//     "2016-2018 President Award Scholarship Recipient",
+//     "NYS Sparring, Form and Board Breaking Gold Medal",
+//   ],
+// };
 
-const am: MasterInfo = {
-  title: "Instructor Ameen",
-  subtitle: "Instructor Ameen Mir",
-  image: AMPicture,
-  details: [
-    "Taekwondo 3rd Degree Black Belt",
-    "Black Hawk Demo Team Leader 2022",
-    "2018-2021, 2024 NYS 1st Place Governor’s Cup Demo Team",
-    "2015-2022 NYS Sparring, Form and Board Breaking Gold Medal",
-    "2018-2021 President Award Scholarship",
-    "Certified Lifeguard",
-    "JV Basketball Team Captain",
-    "2020-2022 National Society of Highschool Honors Award",
-    "Founder of Chess club at MDQ Academy",
-    "SAT Math and Advanced Student Math Tutor",
-    "Co-Founder of MDQ Africa Charity Organization",
-  ],
-};
+// const am: MasterInfo = {
+//   title: "Instructor Ameen",
+//   subtitle: "Instructor Ameen Mir",
+//   image: AMPicture,
+//   details: [
+//     "Taekwondo 3rd Degree Black Belt",
+//     "Black Hawk Demo Team Leader 2022",
+//     "2018-2021, 2024 NYS 1st Place Governor’s Cup Demo Team",
+//     "2015-2022 NYS Sparring, Form and Board Breaking Gold Medal",
+//     "2018-2021 President Award Scholarship",
+//     "Certified Lifeguard",
+//     "JV Basketball Team Captain",
+//     "2020-2022 National Society of Highschool Honors Award",
+//     "Founder of Chess club at MDQ Academy",
+//     "SAT Math and Advanced Student Math Tutor",
+//     "Co-Founder of MDQ Africa Charity Organization",
+//   ],
+// };
 
-const aj: MasterInfo = {
-  title: "Instructor Andrew",
-  subtitle: "Instructor Andrew Jung",
-  image: AJPicture,
-  details: [
-    "Taekwondo 3rd Degree Black Belt",
-    "2021, 2024 NYS 1st Place Governor’s Cup Demo Team",
-    "NYS Sparring, Form and Board-Breaking Gold Medal",
-    "2019 - 2022 President Award Scholarship Recipient",
-    "2021 APC church TA",
-  ],
-};
+// const aj: MasterInfo = {
+//   title: "Instructor Andrew",
+//   subtitle: "Instructor Andrew Jung",
+//   image: AJPicture,
+//   details: [
+//     "Taekwondo 3rd Degree Black Belt",
+//     "2021, 2024 NYS 1st Place Governor’s Cup Demo Team",
+//     "NYS Sparring, Form and Board-Breaking Gold Medal",
+//     "2019 - 2022 President Award Scholarship Recipient",
+//     "2021 APC church TA",
+//   ],
+// };
 
-export const masterList: MasterInfo[] = [mc, mr, ab, os, am, aj];
+export const masterList: MasterInfo[] = [mc, mr, ab,];
