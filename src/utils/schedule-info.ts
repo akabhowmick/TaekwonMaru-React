@@ -16,7 +16,7 @@ export const schedule_info = {
       title: currentMonth + " Events:",
       details: [
         "11/16 - NYS Governor's Championship",
-        "",
+        "11/27-29 - No Classes (Thanksgiving)",
         "",
         "",
       ],
