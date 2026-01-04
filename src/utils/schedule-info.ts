@@ -15,10 +15,10 @@ export const schedule_info = {
     {
       title: currentMonth + " Events:",
       details: [
-        "12/22 - Promotion Test",
-        "12/24, 25 - No classes",
-        "12/29 - Holiday Party",
-        "12/31 - No Class",
+        "01/13 - Black Belt Test",
+        "",
+        "",
+        "",
       ],
     },
     {
