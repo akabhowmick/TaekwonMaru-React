@@ -96,11 +96,11 @@ const am: MasterInfo = {
 };
 
 const aj: MasterInfo = {
-  title: "Instructor Andrew",
-  subtitle: "Instructor Andrew Jung",
+  title: "Master Andrew",
+  subtitle: "Master Andrew Jung",
   image: AJPicture,
   details: [
-    "Taekwondo 3rd Degree Black Belt",
+    "Taekwondo 4rd Degree Black Belt",
     "2021, 2024 NYS 1st Place Governor’s Cup Demo Team",
     "NYS Sparring, Form and Board-Breaking Gold Medal",
     "2019 - 2022 President Award Scholarship Recipient",
