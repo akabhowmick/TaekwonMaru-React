@@ -77,11 +77,11 @@ const os: MasterInfo = {
 };
 
 const am: MasterInfo = {
-  title: "Instructor Ameen",
-  subtitle: "Instructor Ameen Mir",
+  title: "Master Ameen",
+  subtitle: "Master Ameen Mir",
   image: AMPicture,
   details: [
-    "Taekwondo 3rd Degree Black Belt",
+    "Taekwondo 4th Degree Black Belt",
     "Black Hawk Demo Team Leader 2022",
     "2018-2021, 2024 NYS 1st Place Governor’s Cup Demo Team",
     "2015-2022 NYS Sparring, Form and Board Breaking Gold Medal",
