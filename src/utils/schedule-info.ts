@@ -15,9 +15,9 @@ export const schedule_info = {
     {
       title: currentMonth + " Events:",
       details: [
-        "01/13 - Black Belt Test",
-        "01/19 - No Class (MLK day)",
-        "01/30 - Baylis Performance (revised schedule)",
+        "02/16 & 17 No Class ",
+        "02/09-21 Buddy Week",
+        "",
         "",
       ],
     },
