@@ -21,10 +21,10 @@ export const schedule_info = {
         "",
       ],
     },
-    {
-      title: "Junior Leader Meeting:",
-      details: ["TBD", "Mandatory Monthly Meeting for Junior Leaders!", "", ""],
-    },
+    // {
+    //   title: "Junior Leader Meeting:",
+    //   details: ["TBD", "Mandatory Monthly Meeting for Junior Leaders!", "", ""],
+    // },
   ],
   scheduleTitle: `Upcoming Events For: ${currentMonth}`,
 };
